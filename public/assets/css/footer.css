@@ -1,0 +1,80 @@
+@import './normalize.css';
+@import './variables.css';
+
+
+/* ---------- Footer ---------- */
+.footer {
+    width: 100%;
+}
+
+.footer .logo-links {
+    padding: 40px 0;
+    background-color: #EFF3F6;
+}
+
+.footer .logo-links .links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-links {
+    display: flex;
+}
+
+.footer .footer-links ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer .footer-links ul li a {
+    color: var(--color-black);
+    transition: 0.5s;
+}
+
+.footer .footer-links ul li a:hover {
+    color: var(--color-orange);
+}
+
+.footer .footer-links ul h4 {
+    font-size: var(--font-normal);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer .copy {
+    padding: 20px 0;
+    background-color: var(--color-black);
+}
+
+.footer .copy .copy-container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-white);
+}
+
+.footer .socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .socials .social-img {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-round);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer .socials .social-img:hover {
+    background-color: var(--color-orange);
+}
+
+.footer .socials .social-img i {
+    font-size: 20px;
+    color: var(--color-white);
+}

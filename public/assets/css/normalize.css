@@ -347,3 +347,14 @@
   [hidden] {
     display: none;
   }
+
+    /**
+   * -------------
+   */
+
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
