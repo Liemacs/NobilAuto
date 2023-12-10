@@ -8,76 +8,49 @@
                     <h3>în găsirea mașinii potrivite</h3>
                 </div>
                 <form>
-                    <div class="select-box" id="select-box-1">
-                        <div class="select-btn">
-                            <span class="btn-text">Status</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="select-box">
+                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown">Status<i
+                                class="uil fa-solid fa-chevron-down"></i></i></label>
+                        <div class="section-dropdown">
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
                         </div>
-                        {{-- <ul class="options">
-                            <li class="option">
-                                <span class="option-text">Git</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git1</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git2</span>
-                            </li>
-                        </ul> --}}
                     </div>
-                    <div class="select-box" id="select-box-2">
-                        <div class="select-btn">
-                            <span class="btn-text">Status</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="select-box">
+                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown">Producător<i
+                                class="uil fa-solid fa-chevron-down"></i></i></label>
+                        <div class="section-dropdown">
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
                         </div>
-    
-                        {{-- <ul class="options">
-                            <li class="option">
-                                <span class="option-text">Git3</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git4</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git5</span>
-                            </li>
-                        </ul> --}}
                     </div>
-                    <div class="select-box" id="select-box-3">
-                        <div class="select-btn">
-                            <span class="btn-text">Status</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="select-box">
+                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown">Model<i
+                                class="uil fa-solid fa-chevron-down"></i></i></label>
+                        <div class="section-dropdown">
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
                         </div>
-    
-                        {{-- <ul class="options">
-                            <li class="option">
-                                <span class="option-text">Git6</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git7</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git8</span>
-                            </li>
-                        </ul> --}}
                     </div>
-                    <div class="select-box" id="select-box-4">
-                        <div class="select-btn">
-                            <span class="btn-text">Status</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="select-box">
+                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown">Cutie<i
+                                class="uil fa-solid fa-chevron-down"></i></i></label>
+                        <div class="section-dropdown">
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
                         </div>
-    
-                        {{-- <ul class="options">
-                            <li class="option">
-                                <span class="option-text">Git</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Git</span>
-                            </li>
-                        </ul> --}}
                     </div>
                     <div class="filter-btn">
                         <button>

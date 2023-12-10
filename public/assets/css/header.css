@@ -28,6 +28,15 @@
     color: var(--color-white);
 }
 
+.header .header-container nav ul li a.active {
+    color: var(--color-orange);
+    font-weight: 600;
+} 
+
+.header .header-container nav ul li a.active::before {
+    height: 0;
+}
+
 .header .header-container nav ul li a::before {
     position: absolute;
     content: '';

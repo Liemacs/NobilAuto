@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AutoController;
+use App\Http\Controllers\CreditController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/credit', function () {
-    return view('credit');
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/automobile', function () {
-    return view('auto');
-});
+// Automobile
+Route::get('/automobile', [AutoController::class, 'index'])->name('auto');
+
+// Credit
+Route::get('/credit', [CreditController::class, 'index'])->name('credit');
+
+// Credit
+Route::get('/contacte', [ContactController::class, 'index'])->name('contacts');
