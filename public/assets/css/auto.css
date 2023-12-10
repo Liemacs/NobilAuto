@@ -1,0 +1,493 @@
+@import "./variables.css";
+
+.automobile header,
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumb a {
+    color: var(--color-black);
+}
+
+.breadcrumb li:not(:nth-child(1))::before {
+    content: "\\";
+    padding: 0 5px;
+}
+
+.automobile header h2 {
+    font-size: 48px;
+}
+
+.cars-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cars-content aside {
+    width: 320px;
+    --color-black: rgba(40, 40, 40, 0.2);
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius-2);
+    padding: 20px;
+}
+
+.cars-items-box {
+    width: 100%;
+}
+
+.cars-items-box .cars-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Dropdown */
+
+.filters {
+    position: relative;
+    max-width: 100%;
+}
+
+.filters:not(:nth-of-type(1)) {
+    margin-top: 20px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    display: none;
+}
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label {
+    height: 40px;
+    transition: all 200ms linear;
+    border-radius: var(--border-radius-1);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+    border: 1px solid rgba(40, 40, 40, 0.2);
+    --color-black: rgba(40, 40, 40, 1);
+    color: var(--color-black);
+    justify-content: space-between;
+}
+
+.dropdown:not(:checked) + label .uil {
+    margin-left: 10px;
+    transition: transform 200ms linear;
+}
+.dropdown:checked + label .uil {
+    transform: rotate(180deg);
+    margin-left: 10px;
+    transition: transform 200ms linear;
+}
+
+.section-dropdown {
+    position: absolute;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    --color-black: rgba(40, 40, 40, 0.2);
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius-1);
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: block;
+    box-shadow: 0 14px 35px 0 var(--color-black);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 200ms linear;
+}
+
+.dropdown:checked ~ .section-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.dropdown-sub:checked + label,
+.dropdown-sub:not(:checked) + label {
+    position: relative;
+    --color-black: rgba(40, 40, 40, 1);
+    color: var(--color-black);
+    transition: all 200ms linear;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 5px 0;
+    padding-left: 20px;
+    padding-right: 15px;
+    text-align: left;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub:checked + label .uil,
+.dropdown-sub:not(:checked) + label .uil {
+    font-size: 22px;
+}
+.dropdown-sub:not(:checked) + label .uil {
+    transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label .uil {
+    transform: rotate(135deg);
+    transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label:hover,
+.dropdown-sub:not(:checked) + label:hover {
+    color: var(--color-white);
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+.section-dropdown-sub {
+    position: relative;
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    max-height: 0;
+    padding-left: 10px;
+    padding-right: 3px;
+    overflow: hidden;
+    transition: all 200ms linear;
+}
+.dropdown-sub:checked ~ .section-dropdown-sub {
+    pointer-events: auto;
+    opacity: 1;
+    max-height: 999px;
+}
+
+/* Dropdown */
+
+.duo .filters,
+.range-slider .filters,
+.range-slider_euro .filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.duo .filters > *,
+.range-slider .filters > *,
+.range-slider_euro .filters > * {
+    display: flex;
+    border: none;
+    height: 40px;
+    width: 50%;
+    padding: 0 15px;
+    --color-black: rgba(40, 40, 40, 0.2);
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius-1);
+}
+
+/* Range */
+.rangeslider input[type="range"],
+.rangeslider_euro input[type="range"] {
+    margin-top: -20px;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+.rangeslider input[type="range"],
+.rangeslider input[type="range"]::-webkit-slider-runnable-track,
+.rangeslider input[type="range"]::-webkit-slider-thumb,
+.rangeslider_euro input[type="range"],
+.rangeslider_euro input[type="range"]::-webkit-slider-runnable-track,
+.rangeslider_euro input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+}
+.rangeslider input[type="range"]::-webkit-slider-runnable-track,
+.rangeslider_euro input[type="range"]::-webkit-slider-runnable-track {
+    height: 1px;
+    background: var(--color-black);
+}
+
+.rangeslider input[type="range"]:nth-child(2)::-webkit-slider-runnable-track,
+.rangeslider_euro
+    input[type="range"]:nth-child(2)::-webkit-slider-runnable-track {
+    background: none;
+}
+
+.rangeslider input[type="range"]::-webkit-slider-thumb,
+.rangeslider_euro input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    margin-top: -7px;
+    background: var(--color-white);
+    border: 1px solid var(--color-orange);
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.rangeslider input[type="range"]:nth-child(1)::-webkit-slider-thumb,
+.rangeslider_euro input[type="range"]:nth-child(1)::-webkit-slider-thumb {
+    z-index: 2;
+}
+
+.rangeslider,
+.rangeslider_euro {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.rangeslider input,
+.rangeslider_euro input {
+    position: absolute;
+}
+
+/* Range */
+
+/* Checkbox */
+
+.check-box-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.custom-checkbox .label {
+    margin: 0 5px;
+}
+
+.custom-checkbox .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color-black);
+    display: inline-block;
+    border-radius: 3px;
+    background: var(--color-orange)
+        url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png)
+        center/1250% no-repeat;
+    transition: background-size 0.2s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-size: 60%;
+    transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+/* Checkbox */
+
+.cars-content aside .button-filtre {
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cars-content aside .reset {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* --------------------------------- */
+
+.cars-sort-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.cars-sort-box .filters {
+    width: 150px;
+}
+
+.cars-sort-box .dropdown:checked + label,
+.cars-sort-box .dropdown:not(:checked) + label {
+    height: 30px;
+}
+
+/* Item */
+
+.cars-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    transition: all 200ms linear;
+}
+
+.cars-items .item {
+    max-width: 270px;
+    padding: 10px 12px;
+    color: var(--color-black);
+    border: 1px solid rgba(40, 40, 40, 0.2);
+    border-radius: var(--border-radius-2);
+    transition: all 200ms linear;
+}
+
+.cars-items .item span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cars-items .item span small {
+    position: relative;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.cars-items .item p {
+    font-weight: 400;
+}
+
+.cars-items .item-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 170px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-1);
+    transition: all 200ms linear;
+}
+
+.cars-items .item-img-detail {
+    position: absolute;
+    display: none;
+    width: 100%;
+    bottom: 0;
+    color: var(--color-white);
+    z-index: 3;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 200ms linear;
+}
+
+.cars-items .item:hover .item-img-detail {
+    display: flex;
+}
+
+.cars-items .item-img-detail .fa-eye {
+    margin-left: 20px;
+}
+
+.cars-items .item-img-detail .fa-heart {
+    margin-right: 20px;
+}
+
+.cars-items .item-img span {
+    font-size: var(--font-small);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cars-items .item:hover img {
+    scale: 1.2;
+    transition: all 200ms linear;
+}
+
+.cars-items .item:hover .item-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 200ms linear;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #000 100%);
+    z-index: 2;
+}
+
+.cars-items .item-img img {
+    width: 100%;
+    height: auto;
+    transition: all 200ms linear;
+}
+
+.cars-items .details {
+    border-top: 1px solid var(--color-black);
+}
+
+.cars-items .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cars-items .details > * {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Item */
+
+/* pagination */
+
+.page {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    list-style: none;
+}
+.pagination li {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid rgba(40, 40, 40, 0.2);
+
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 200ms linear;
+}
+.pagination li:hover {
+    border: 1px solid var(--color-orange);
+    transition: all 200ms linear;
+}
+.pagination li a {
+    color: var(--color-black);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pagination-item.active {
+    background: var(--color-orange);
+    border: none;
+}
+
+/* pagination */
