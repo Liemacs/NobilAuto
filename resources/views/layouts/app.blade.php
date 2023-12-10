@@ -25,16 +25,16 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Acasă</a>
+                            <a href="/" class="@if(isset($page) && $page == 'home') active @endif">Acasă</a>
                         </li>
                         <li>
-                            <a href="#">Automobile</a>
+                            <a href="{{route('auto')}}" class="@if(isset($page) && $page == 'auto') active @endif">Automobile</a>
                         </li>
                         <li>
-                            <a href="#">Cumpără în rate</a>
+                            <a href="{{route('credit')}}" class="@if(isset($page) && $page == 'credit') active @endif">Cumpără în rate</a>
                         </li>
                         <li>
-                            <a href="#">Contacte</a>
+                            <a href="{{route('contacts')}}" class="@if(isset($page) && $page == 'contacts') active @endif">Contacte</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,16 +66,16 @@
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="#">Acasă</a>
+                                        <a href="/">Acasă</a>
                                     </li>
                                     <li>
-                                        <a href="#">Automobile</a>
+                                        <a href="{{route('auto')}}">Automobile</a>
                                     </li>
                                     <li>
-                                        <a href="#">Cumpără în rate</a>
+                                        <a href="{{route('credit')}}">Cumpără în rate</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contacte</a>
+                                        <a href="{{route('contacts')}}">Contacte</a>
                                     </li>
                                 </ul>
                             </div>
@@ -98,16 +98,16 @@
                         <ul>
                             <h4>Menu</h4>
                             <li>
-                                <a href="#">Acasă</a>
+                                <a href="/">Acasă</a>
                             </li>
                             <li>
-                                <a href="#">Automobile</a>
+                                <a href="{{route('auto')}}">Automobile</a>
                             </li>
                             <li>
-                                <a href="#">Cumpără în rate</a>
+                                <a href="{{route('credit')}}">Cumpără în rate</a>
                             </li>
                             <li>
-                                <a href="#">Contacte</a>
+                                <a href="{{route('contacts')}}">Contacte</a>
                             </li>
                         </ul>
                         <ul>
