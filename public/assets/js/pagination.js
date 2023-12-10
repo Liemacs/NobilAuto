@@ -8,7 +8,7 @@ function generatePaginationItems(currentPage, totalPages) {
     }
 
     for (var i = Math.max(1, currentPage - pagesToShow); i <= Math.min(totalPages, currentPage + pagesToShow); i++) {
-      createPaginationItem(i, i === currentPage); // Highlight the current page
+      createPaginationItem(i, i === currentPage); 
     }
 
     // Generate next link
@@ -28,5 +28,4 @@ function generatePaginationItems(currentPage, totalPages) {
     }
   }
 
-  // Call the function with the desired current page and total number of pages
   generatePaginationItems(2, 470);

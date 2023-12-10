@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/css/header.css"/>
     <link rel="stylesheet" href="/assets/css/footer.css"/>
     <link rel="stylesheet" href="/assets/css/responsiv.css"/>
+    <link rel="stylesheet" href="/assets/css/animation.css"/>
     <title>NobilAuto</title>
 
     <link rel="stylesheet" href="/assets/css/auto.css">
