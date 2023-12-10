@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/credit', function () {
     return view('credit');
 });
+
+Route::get('/automobile', function () {
+    return view('auto');
+});
