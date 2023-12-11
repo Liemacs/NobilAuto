@@ -1,18 +1,15 @@
-@import './normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
     /* COLORS */
     --background: rgba(239, 243, 246, 1);
-    --color-orange: rgba(240, 121, 0, 1);
+    --color-orange: 240, 121, 0;
     --color-white: rgba(255, 255, 255, 1);
     --color-black: rgba(40, 40, 40, 1);
 
-    /* BORDER RADIUS */ 
-    --border-radius-1: 10px; 
-    --border-radius-2: 15px; 
+    /* BORDER RADIUS */
+    --border-radius-1: 10px;
+    --border-radius-2: 15px;
     --border-round: 100%;
 
     /* FONT SIZE */
