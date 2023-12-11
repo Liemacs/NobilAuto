@@ -49,18 +49,18 @@ document.addEventListener("DOMContentLoaded", function () {
         maxVal = parseInt(maxBtn.value),
         origin = e.target.className;
   
-        if (origin == "min" && minVal > maxVal - 1000) {
-            minBtn.value = maxVal - 1000;
-          }
-          var newMinVal = parseInt(minBtn.value);
-          range_min.value = newMinVal;
-      
-          if (origin == "max" && maxVal - 1000 < newMinVal) {
-            maxBtn.value = 1000 + newMinVal;
-          }
-          var newMaxVal = parseInt(maxBtn.value);
-          range_max.value = newMaxVal;
-        }
+      if (origin == "min" && minVal > maxVal - 1000) {
+        minBtn.value = maxVal - 1000;
+      }
+      var newMinVal = parseInt(minBtn.value);
+      range_min.value = addSeparator(newMinVal) + " €";
+  
+      if (origin == "max" && maxVal - 1000 < newMinVal) {
+        maxBtn.value = 1000 + newMinVal;
+      }
+      var newMaxVal = parseInt(maxBtn.value);
+      range_max.value = addSeparator(newMaxVal) + " €";
+    }
   
     var rangeInputs = document.querySelectorAll('.range-slider_euro input[type="range"]');
     rangeInputs.forEach(function (input) {

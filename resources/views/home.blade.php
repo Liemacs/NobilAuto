@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+Nobil Auto
+@endsection
 @section('content')
     <div class="home-wrapper">
         <section class="banner">
@@ -67,31 +70,31 @@
         <section class="categories">
             <div class="category-container container">
                 <div class="category-swiper owl-carousel owl-categories">
-                    <a href="#">
+                    <a href="#" class="item" >
                         <div class="category-box">
                             <img src="/assets/images/home/car-category/car-1.png" alt=" car">
                             <span>Compact</span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="item">
                         <div class="category-box">
                             <img src="/assets/images/home/car-category/car-2.png" alt=" car">
                             <span>Sedan</span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="item">
                         <div class="category-box">
                             <img src="/assets/images/home/car-category/car-3.png" alt=" car">
                             <span>SUV</span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="item">
                         <div class="category-box">
                             <img src="/assets/images/home/car-category/car-4.png" alt=" car">
                             <span>Convertibile</span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="item">
                         <div class="category-box">
                             <img src="/assets/images/home/car-category/car-5.png" alt=" car">
                             <span>Coupe</span>
