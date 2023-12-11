@@ -22,11 +22,11 @@
 .header .header-container nav ul li a {
     position: relative;
     font-weight: 300;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
 }
 
 .header .header-container nav ul li a.active {
-    color: var(--color-orange);
+    color: rgba(var(--color-orange), 1);
     font-weight: 600;
 } 
 
@@ -39,7 +39,7 @@
     content: '';
     width: 0;
     height: 2px;
-    background-color: var(--color-orange);
+    background-color: rgba(var(--color-orange), 1);
     bottom: -2px;
     transition: 0.5s;
 }
@@ -58,30 +58,30 @@
     padding: 5px 10px 5px 20px;
     border-radius: var(--border-radius-1);
     background-color: transparent;
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
+    color: rgba(var(--color-white), 1);
+    border: 1px solid rgba(var(--color-white), 1);
     cursor: pointer;
     transition: 0.5s;
 }
 
 .nav-actions .favorites-btn button:hover {
-    background-color: var(--color-orange);
-    border: 1px solid var(--color-orange);
+    background-color: rgba(var(--color-orange), 1);
+    border: 1px solid rgba(var(--color-orange), 1);
 }
 
 .nav-actions .favorites-btn button span {
     margin-left: 10px;
     font-size: 12px;
     padding: 0 4px;
-    background-color: var(--color-orange);
-    color: var(--color-white);
+    background-color: rgba(var(--color-orange), 1);
+    color: rgba(var(--color-white), 1);
     border-radius: 5px;
     transition: 0.5s;
 }
 
 .nav-actions .favorites-btn button:hover span {
-    background-color: var(--color-white);
-    color: var(--color-orange);
+    background-color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-orange), 1);
 }
 
 .nav-actions .nav-icons {
@@ -100,7 +100,7 @@
 
 .nav-actions .nav-icons .lang .circle {
     position: absolute;
-    background-color: var(--color-white);
+    background-color: rgba(var(--color-white), 1);
     bottom: 2px;
     right: -3px;
     font-size: 10px;
@@ -127,12 +127,12 @@
 .nav-actions .nav-icons .nav-menu .lines .line {
     width: 100%;
     height: 2px;
-    background-color: var(--color-white);
+    background-color: rgba(var(--color-white), 1);
     transition: 0.5s;
 }
 
 .nav-actions .nav-icons .nav-menu .lines .line.active {
-    background-color: var(--color-black);
+    background-color: rgba(var(--color-black), 1);
 }
 
 .nav-actions .nav-icons .nav-menu .lines .line:nth-of-type(1).active {
@@ -153,7 +153,7 @@
     right: 0;
     width: 0;
     height: 100vh;
-    background-color: var(--color-white);
+    background-color: rgba(var(--color-white), 1);
     transition: 0.5s;
 }
 
@@ -163,7 +163,7 @@
 
 .nav-actions .nav-icons .menu .nav-intro {
     padding-left: 40px;
-    border-bottom: 1px solid var(--color-orange);
+    border-bottom: 1px solid rgba(var(--color-orange), 1);
 }
 
 .nav-actions .nav-icons .menu .nav-intro h4 {
@@ -177,16 +177,16 @@
 }
 
 .nav-actions .nav-icons .menu ul li a {
-    color: var(--color-black);
+    color: rgba(var(--color-black), 1);
     font-size: 16px;
 }
 
 .header .black a:not(.active) {
-    color: var(--color-black);
+    color: rgba(var(--color-black), 1);
 }
 
 .header button.black {
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
+    color: rgba(var(--color-black), 1);
+    border: 1px solid rgba(var(--color-black), 1);
 }
 

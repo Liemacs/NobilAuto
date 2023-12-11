@@ -2,10 +2,10 @@
 
 :root {
     /* COLORS */
-    --background: rgba(239, 243, 246, 1);
+    --background: 239, 243, 246;
     --color-orange: 240, 121, 0;
-    --color-white: rgba(255, 255, 255, 1);
-    --color-black: rgba(40, 40, 40, 1);
+    --color-white: 255, 255, 255;
+    --color-black: 40, 40, 40;
 
     /* BORDER RADIUS */
     --border-radius-1: 10px;
@@ -25,6 +25,6 @@
 
 body {
     font-family: Inter;
-    color: var(--color-black);
+    color: rgba(var(--color-black), 1);
     font-size: var(--font-small);
 }
