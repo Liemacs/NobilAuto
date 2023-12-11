@@ -57,7 +57,9 @@ Nobil Auto
                     </div>
                     <div class="filter-btn">
                         <button>
-                            <img src="/assets/images/header/magnifyingglass.svg" alt="search icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.53223 14.0332C8.92969 14.0332 10.2393 13.6113 11.3291 12.8906L15.1787 16.749C15.4336 16.9951 15.7588 17.1182 16.1104 17.1182C16.8398 17.1182 17.376 16.5469 17.376 15.8262C17.376 15.4922 17.2617 15.167 17.0156 14.9209L13.1924 11.0801C13.9834 9.95508 14.4492 8.59277 14.4492 7.11621C14.4492 3.31055 11.3379 0.199219 7.53223 0.199219C3.73535 0.199219 0.615234 3.31055 0.615234 7.11621C0.615234 10.9219 3.72656 14.0332 7.53223 14.0332ZM7.53223 12.1875C4.74609 12.1875 2.46094 9.90234 2.46094 7.11621C2.46094 4.33008 4.74609 2.04492 7.53223 2.04492C10.3184 2.04492 12.6035 4.33008 12.6035 7.11621C12.6035 9.90234 10.3184 12.1875 7.53223 12.1875Z" fill="white"/>
+                                </svg>
                             <span>Caută</span>
                         </button>
                     </div>
@@ -222,10 +224,108 @@ Nobil Auto
         </section>
 
         <section class="benefits">
-            <div class="benefits-container">
-                <h1>Ce-ar Fi Să Ai Propria Mașină Începând De Astăzi?</h1>
+            <div class="benefits-container container">
+                <h1>Cum-ar Fi Să Ai Propria Mașină Începând De Astăzi?</h1>
+
+                <div class="benefits-box">
+                    <div class="benefits-content">
+                        <div class="benefit-box">
+                            <div class="benefit-icon">
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/surcxhka.json"
+                                    trigger="hover"
+                                    state="hover-jump-roll"
+                                    colors="primary:#121331,secondary:#f07900"
+                                    style="width:90px;height:90px">
+                                </lord-icon>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>Randez-Vous</h3>
+                                <p>Stabilim o întâlnire la Parcarea NobilAuto</p>
+                            </div>
+                        </div>
+                        <div class="benefit-box">
+                            <div class="benefit-icon">
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/wzrwaorf.json"
+                                    trigger="hover"
+                                    colors="primary:#121331,secondary:#f07900"
+                                    style="width:90px;height:90px">
+                                </lord-icon>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>Personalizare</h3>
+                                <p>Alegem împreună mașina dorită</p>
+                            </div>
+                        </div>
+                        <div class="benefit-box">
+                            <div class="benefit-icon">
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/ghhwiltn.json"
+                                    trigger="hover"
+                                    colors="primary:#121331,secondary:#f07900"
+                                    style="width:90px;height:90px">
+                                </lord-icon>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>Contacte</h3>
+                                <p>Formalizarea angajamentului nostru Auto!</p>
+                            </div>
+                        </div>
+                        <div class="benefit-box">
+                            <div class="benefit-icon">
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/gqjpawbc.json"
+                                    trigger="hover"
+                                    colors="primary:#121331,secondary:#f07900"
+                                    style="width:90px;height:90px">
+                                </lord-icon>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>Noul Început</h3>
+                                <p>Pornește la drum cu volanul unei mașini noi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefit-img">
+                        <img src="/assets/images/home/benefit.jpg" alt="benefit">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achivements">
+            <div class="achivements-container container">
+                <div class="achivement">
+                    <span>450</span>
+                    <p>Mașini vândute</p>
+                </div>
+                <div class="achivement">
+                    <span>20</span>
+                    <p>Diverse modele</p>
+                </div>
+                <div class="achivement">
+                    <span>8350</span>
+                    <p>Vizitatori Zilnic</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="adds">
+            <div class="adds-container container">
+                <h1>Noi facem ca găsirea mașinii <br /> potrivite să fie mai simplă</h1>
+                <p>
+                    La NobilAuto, ceea ce contează pentru noi este să facem ca 
+                    experiența de căutare și de cumpărare a mașinii dvs. să fie 
+                    cât mai simplă, astfel încât să puteți găsi rapid mașina potrivită 
+                    și să puteți continua să o faceți să fie a dvs.
+                </p>
             </div>
         </section>
     </div>
-
 @endsection

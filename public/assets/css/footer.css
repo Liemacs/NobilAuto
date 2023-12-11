@@ -15,6 +15,7 @@
 
 .footer .footer-links {
     display: flex;
+    gap: 40px;
 }
 
 .footer .footer-links ul li {
