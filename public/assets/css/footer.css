@@ -15,6 +15,7 @@
 
 .footer .footer-links {
     display: flex;
+    gap: 40px;
 }
 
 .footer .footer-links ul li {
@@ -23,12 +24,12 @@
 }
 
 .footer .footer-links ul li a {
-    color: var(--color-black);
+    color: rgba(var(--color-black), 1);
     transition: 0.5s;
 }
 
 .footer .footer-links ul li a:hover {
-    color: var(--color-orange);
+    color: rgba(var(--color-orange), 1);
 }
 
 .footer .footer-links ul h4 {
@@ -39,14 +40,14 @@
 
 .footer .copy {
     padding: 20px 0;
-    background-color: var(--color-black);
+    background-color: rgba(var(--color-black), 1);
 }
 
 .footer .copy .copy-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
 }
 
 .footer .socials {
@@ -67,10 +68,10 @@
 }
 
 .footer .socials .social-img:hover {
-    background-color: var(--color-orange);
+    background-color: rgba(var(--color-orange), 1);
 }
 
 .footer .socials .social-img i {
     font-size: 20px;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
 }

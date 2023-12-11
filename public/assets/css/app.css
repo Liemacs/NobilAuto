@@ -32,18 +32,18 @@
 
 .banner .banner-container .banner-titles h1 {
     font-size: 64px;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
     margin: 0;
 }
 
 .banner .banner-container .banner-titles h3 {
     font-size: 32px;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
     margin: 0;
 }
 
 .banner .banner-container form {
-    background-color: var(--color-white);
+    background-color: rgba(var(--color-white), 1);
     border-radius: 15px;
     padding: 30px;
     display: flex;
@@ -67,7 +67,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
     font-weight: 500;
     border-radius: var(--border-radius-1);
     cursor: pointer;
@@ -76,8 +76,12 @@
 
 .banner .banner-container form .filter-btn button:hover {
     border: 1px solid rgba(var(--color-orange), 1);
-    background-color: var(--color-white);
+    background-color: rgba(var(--color-white), 1);
     color: rgba(var(--color-orange), 1);
+}
+
+.banner .banner-container form .filter-btn button:hover svg  path{
+    fill: rgba(var(--color-orange), 1);
 }
 
 /* End Banner Section */
@@ -104,6 +108,11 @@
     justify-content: center;
     gap: 15px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.categories .category-container .category-box:hover {
+    filter: brightness(85%);
 }
 
 .owl-categories .owl-item img {
@@ -111,7 +120,7 @@
 }
 
 .categories .category-container .category-box span {
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
     font-weight: 500;
 }
 
@@ -186,7 +195,7 @@
     z-index: 15;
     display: flex;
     justify-content: space-between;
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
     opacity: 0;
     transition: 1s;
 }
@@ -201,7 +210,7 @@
 }
 
 .news .news-container .news-slider .new-card .new-detail {
-    color: var(--color-black);
+    color: rgba(var(--color-black), 1);
 }
 
 .news .news-container .news-slider .new-card .new-detail h3 {
@@ -276,7 +285,7 @@
 
 .owl-prev:hover i,
 .owl-next:hover i {
-    color: var(--color-white);
+    color: rgba(var(--color-white), 1);
 }
 
 .owl-prev i,
@@ -293,3 +302,107 @@
     display: none;
 }
 /* End Hot News Section */
+
+
+/* Benefits Section */
+
+.benefits {
+    width: 100%;
+    background-color: rgba(var(--color-white), 1);
+    padding: 50px 0;
+}
+
+.benefits h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.benefits .benefits-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits .benefits-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.benefits .benefits-content .benefit-text h3 {
+    font-size: var(--font-normal);
+    font-weight: 700;
+}
+
+.benefits .benefits-content .benefit-text p {
+    font-size: var(--font-small);
+}
+
+.benefits .benefits-box .benefit-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-2);
+}
+
+/* End Benefits Section */
+
+/* Achivements Section */
+
+.achivements {
+    background-color: #EFF3F6;
+}
+
+.achivements .achivements-container {
+    display: flex;
+    padding: 70px 0;
+    justify-content: center;
+    gap: 100px;
+}
+
+.achivements .achivements-container .achivement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achivements .achivements-container .achivement span {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.achivements .achivements-container .achivement p {
+    font-size: var(--font-normal);
+    font-weight: 700;
+}
+
+/* End Achivements Section */
+
+/* Adds Section */
+
+.adds {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/home/adds-car.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.adds .adds-container {
+    display: flex;
+    flex-direction: column;
+    padding: 136px 0;
+}
+
+.adds .adds-container h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(var(--color-white), 1);
+}
+
+.adds .adds-container p {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(var(--color-white), 1);
+    width: 500px;
+    line-height: 26px;
+}
+
+/* End Adds Section */
+
