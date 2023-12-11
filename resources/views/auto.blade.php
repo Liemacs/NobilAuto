@@ -99,9 +99,9 @@
                     </div>
                     <div class="filters">
                         <input class="range_min_euro" type="text" id="range_min_euro" name="range_min"
-                            value="1.000€" onkeyup="this.value = this.value.replace (/[^0-9+]/, '')" />
+                            value="1.000 €" onkeyup="this.value = this.value.replace (/[^0-9+]/, '')" />
                         <input class="range_max_euro" type="text" id="range_max_euro" name="range_max"
-                            value="10.000€" onkeyup="this.value = this.value.replace (/[^0-9+]/, '')" />
+                            value="10.000 €" onkeyup="this.value = this.value.replace (/[^0-9+]/, '')" />
                     </div>
                 </div>
                 <div class="range-slider_euro">

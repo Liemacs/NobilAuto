@@ -1,11 +1,18 @@
-@import "./variables.css";
+.automobile {
+    margin-bottom: 50px;
+}
 
 .automobile header,
+.automobile .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .breadcrumb {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .breadcrumb a {
@@ -15,6 +22,10 @@
 .breadcrumb li:not(:nth-child(1))::before {
     content: "\\";
     padding: 0 5px;
+}
+
+.automobile header {
+    margin: 80px 0 40px 0;
 }
 
 .automobile header h2 {
@@ -51,6 +62,14 @@
     position: relative;
     max-width: 100%;
 }
+
+.automobile aside > div:not(:nth-child(1)) > h2{
+    margin: 20px 0;
+}
+
+.automobile aside > div:nth-child(1) > h2 {
+    margin-bottom: 20px;
+} 
 
 .filters:not(:nth-of-type(1)) {
     margin-top: 20px;
@@ -234,7 +253,7 @@
     width: 15px;
     margin-top: -7px;
     background: var(--color-white);
-    border: 1px solid var(--color-orange);
+    border: 1px solid rgba(var(--color-orange), 1);
     border-radius: 25px;
     z-index: 1;
 }
@@ -281,7 +300,7 @@
     border: 2px solid var(--color-black);
     display: inline-block;
     border-radius: 3px;
-    background: var(--color-orange)
+    background: rgba(var(--color-orange), 1)
         url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png)
         center/1250% no-repeat;
     transition: background-size 0.2s ease;
@@ -299,7 +318,7 @@
 /* Checkbox */
 
 .cars-content aside .button-filtre {
-    background: var(--color-orange);
+    background: rgba(var(--color-orange), 1);
     color: var(--color-white);
     font-weight: 700;
     width: 100%;
@@ -474,7 +493,7 @@
     transition: all 200ms linear;
 }
 .pagination li:hover {
-    border: 1px solid var(--color-orange);
+    border: 1px solid rgba(var(--color-orange), 1);
     transition: all 200ms linear;
 }
 .pagination li a {
@@ -486,7 +505,7 @@
 }
 
 .pagination-item.active {
-    background: var(--color-orange);
+    background: rgba(var(--color-orange), 1);
     border: none;
 }
 

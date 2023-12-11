@@ -29,3 +29,6 @@ function generatePaginationItems(currentPage, totalPages) {
   }
 
   generatePaginationItems(2, 470);
+
+
+  

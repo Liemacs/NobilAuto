@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+Nobil Auto
+@endsection
 @section('content')
     <div class="home-wrapper">
         <section class="banner">
