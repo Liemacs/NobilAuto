@@ -8,9 +8,7 @@
             </ul>
         </div>
         <div class="parallax-box">
-            <div class="parallax-image">
-                <img src="/assets/images/credit/parallax.jpg" alt="">
-            </div>
+            <div class="parallax-image"></div>
             <div class="container">
                 <div class="parallax-text">
                     <h1>Suntem alături de tine cu oferte generoase pentru viitorul tău automobil</h1>
@@ -82,18 +80,22 @@
                     <button>Solicitați serviciul</button>
                 </div>
                 <div class="loan-img">
-                    <img src="/assets/images/credit/loan-calc.jpg" alt="auto cumpara in credit">
+                    <img src="/assets/images/credit/loan-calc.jpg" loading="lazy" alt="auto cumpara in credit">
                     <h2>Următoarea ta mașină te așteaptă la <br><span>NobilAuto</span></h2>
                     <button>Explorarează ofertele auto</button>
                 </div>
             </div>
         </div>
     </section>
-
-    <script>
-        document.addEventListener("scroll", function () {
-            var scrollPosition = window.scrollY;
-            document.querySelector(".parallax-image").style.transform = "translateY(" + (-scrollPosition * 0.5) + "px)";
-        });
-    </script>
+    <section class="allure-section container">
+        <div class="allure-container">
+            <div class="allure-image">
+                <img src="/assets/images/credit/allure-img.jpg" loading="lazy" alt="bmw-car">
+            </div>
+            <div class="allure-text">
+                <p>Nu ezita, Apelază acum și descoperă ce rată lunară îți poate aduce mașina visurilor tale!</p>
+                <button>+373 12345678</button>
+            </div>
+        </div>
+    </section>
 @endsection

@@ -49,27 +49,27 @@
                 <div class="form-input">
                     <div class="input">
                         <label for="firstName">Nume</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Will" required>
+                        <input type="text" name="firstName" id="firstName" placeholder="Introduceți numele" required>
                     </div>
                     <div class="input">
                         <label for="lastName">Prenume</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Smith" required>
+                        <input type="text" name="lastName" id="lastName" placeholder="Introduceți prenumele" required>
                     </div>
                 </div>
                 <div class="form-input">
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="willsmith@gmail.com" required>
+                        <input type="email" name="email" id="email" placeholder="exemplu@gmail.com" required>
                     </div>
                     <div class="input">
                         <label for="phone">Telefon Mobil</label>
-                        <input type="number" name="phone" id="phone" placeholder="+373612345" required>
+                        <input type="number" name="phone" id="phone" placeholder="+373 612345" required>
                     </div>
                 </div>
                 <div class="form-input">
                     <div class="input">
                         <label for="message">Mesaj</label>
-                        <textarea id="message" name="message" rows="4" cols="50">Trimite un mesaj ...</textarea>
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Trimite un mesaj..."></textarea>
                     </div>
                 </div>
                 <div class="contacts-btn">

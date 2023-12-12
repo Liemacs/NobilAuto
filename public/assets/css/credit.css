@@ -10,27 +10,25 @@
     overflow: hidden;
 }
 
+.credit .parallax-image {
+    background-image: url('/assets/images/credit/parallax.jpg');
+}
+
 .parallax-image {
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    filter: brightness(50%);
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 420px;
-    z-index: -1;
-}
-
-.parallax-box::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.5;
 }
 
 .parallax-image img {
     transform: translateY(-20%);
-    width: 100%;
+    position: fixed;
 }
 
 .parallax-box .container {
@@ -71,6 +69,7 @@
 }
 
 .conditions-section > p:nth-child(3) {
+    margin-top: 20px;
     font-weight: 500;
 }
 .conditions-section > h1 {
@@ -151,6 +150,10 @@
     margin: 7px 0 20px;
 }
 
+.loan-calc .loan-container input:focus{
+    border: 1px solid rgba(var(--color-orange), 1);
+}
+
 .loan-calc .loan-container .loan-rate-period-container {
     display: flex;
     flex-direction: row;
@@ -177,16 +180,6 @@
     position: relative;
 }
 
-.loan-box .loan-img::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(var(--color-black), 1);
-    border-radius: var(--border-radius-2);
-    opacity: .5;
-} 
 
 .loan-box .loan-img h2,
 .loan-box .loan-img button {
@@ -213,16 +206,24 @@
     text-transform: capitalize;
 }
 
+.loan-box .loan-img button:hover {
+    color: rgba(var(--color-black), 1);
+    background: rgba(var(--color-orange), 1);
+    cursor: pointer;
+}
+
 .loan-box .loan-img h2 span {
     color: rgba(var(--color-orange), 1);
 }
 
 .loan-box .loan-img img {
     position: relative;
+    filter: brightness(50%);
     border-radius: var(--border-radius-2);
 }
 
-.loan-box button {
+.loan-box button,
+.allure-section .allure-container button {
     border: 1px solid rgba(var(--color-orange), 1);
     border-radius: var(--border-radius-1);
     justify-content: center;
@@ -230,14 +231,70 @@
     transition: all 200ms linear;
 }
 
-.loan-calc .loan-container > button {
+.loan-calc .loan-container > button,
+.allure-section .allure-container button {
     padding: 15px 35px;
     background: rgba(var(--color-orange), 1);
     color: rgba(var(--color-white), 1);
     cursor: pointer;
 }
 
-.loan-calc .loan-container > button:hover {
+.loan-calc .loan-container > button:hover,
+.allure-section .allure-container button:hover {
     transition: all 200ms linear;
     background: rgba(var(--color-orange), 0.8);
+}
+
+.allure-section .allure-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 50px;
+}
+
+.allure-section .allure-container::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(var(--color-black), 0.2);
+    border-radius: var(--border-radius-2);
+    width: 100%;
+    height: 280px;
+    z-index: -1;
+}
+
+.allure-section .allure-container .allure-image {
+    border-radius: var(--border-radius-1);
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allure-container .allure-image img {
+    position: absolute;
+    transform: translateX(-10%);
+    transition: all 200ms linear;
+}
+
+.allure-container .allure-image:hover img {
+    transform: scale(1.1)  translateX(-10%);
+    transition: all 200ms linear;
+}
+
+.allure-section .allure-container .allure-text {
+    width: 45%;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.allure-section .allure-container button {
+    padding: 15px 60px;
+    margin-top: 50px;
 }

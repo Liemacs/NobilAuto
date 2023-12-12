@@ -33,7 +33,6 @@
 }
 
 .contacts-details .details-box .contact-detail span {
-    font-size: 18px;
     font-weight: 600;
 }
 
@@ -42,7 +41,6 @@
     margin: 0;
     color: rgba(var(--color-black), 1);
     transition: .3s;
-    font-size: 18px;
 }
 
 .contacts-details .details-box .contact-detail a:hover {
@@ -75,19 +73,17 @@
 }
 
 .contacts-container .contact-form form .form-input .input label {
-    font-size: 18px;
     font-weight: 600;
 }
 
 .contacts-container .contact-form form .form-input .input input,
 .contacts-container .contact-form form .form-input .input textarea {
     width: 100%;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: var(--border-radius-1);
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    font-size: 18px;
-    resize: none;
-    outline: none;
+    border: 1px solid rgba(var(--color-black), 0.2);
+    font-size: 16px;
+    font-family: Inter;
 }
 
 .contacts-container .contact-form form .form-input .input input:focus,
@@ -96,7 +92,7 @@
 }
 
 .contacts-container .contact-form form .contacts-btn button {
-    padding: 20px 70px;
+    padding: 15px 70px;
     border: 1px solid rgba(var(--color-orange), 1);
     background-color: rgba(var(--color-orange), 1);
     color: rgba(var(--color-white), 1);
@@ -105,7 +101,6 @@
     cursor: pointer;
     transition: 0.5s;
     font-weight: 600;
-    font-size: 16px;
 }
 
 .contacts-container .contact-form form .contacts-btn button:hover {

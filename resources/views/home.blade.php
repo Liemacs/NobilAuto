@@ -72,31 +72,31 @@ Nobil Auto
                 <div class="category-swiper owl-carousel owl-categories">
                     <a href="#" class="item" >
                         <div class="category-box">
-                            <img src="/assets/images/home/car-category/car-1.png" alt=" car">
+                            <img src="/assets/images/home/car-category/car-1.png" loading="lazy" alt=" car">
                             <span>Compact</span>
                         </div>
                     </a>
                     <a href="#" class="item">
                         <div class="category-box">
-                            <img src="/assets/images/home/car-category/car-2.png" alt=" car">
+                            <img src="/assets/images/home/car-category/car-2.png" loading="lazy" alt=" car">
                             <span>Sedan</span>
                         </div>
                     </a>
                     <a href="#" class="item">
                         <div class="category-box">
-                            <img src="/assets/images/home/car-category/car-3.png" alt=" car">
+                            <img src="/assets/images/home/car-category/car-3.png" loading="lazy" alt=" car">
                             <span>SUV</span>
                         </div>
                     </a>
                     <a href="#" class="item">
                         <div class="category-box">
-                            <img src="/assets/images/home/car-category/car-4.png" alt=" car">
+                            <img src="/assets/images/home/car-category/car-4.png" loading="lazy" alt=" car">
                             <span>Convertibile</span>
                         </div>
                     </a>
                     <a href="#" class="item">
                         <div class="category-box">
-                            <img src="/assets/images/home/car-category/car-5.png" alt=" car">
+                            <img src="/assets/images/home/car-category/car-5.png" loading="lazy" alt=" car">
                             <span>Coupe</span>
                         </div>
                     </a>
@@ -108,7 +108,7 @@ Nobil Auto
             <div class="news-container container">
                 <div class="news-title">
                     <h1>Descoperiți Anunțurile Noastre Fierbinți</h1>
-                    <img src="/assets/images/home/news-img/waves.svg" alt="">
+                    <img src="/assets/images/home/news-img/waves.svg" loading="lazy" alt="Nobil Auto">
                 </div>
     
                 <div class="news-slider">
@@ -117,7 +117,7 @@ Nobil Auto
                             <a href="#">
                                 <div class="new-img-box">
                                     <div class="img-gradient"></div>
-                                    <img src="/assets/images/home/news-img/news-car.jpg" alt="car">
+                                    <img src="/assets/images/home/news-img/news-car.jpg" loading="lazy" alt="car">
                                     <div class="new-views">
                                         <div class="views">
                                             <i class="fa-regular fa-eye"></i>
@@ -152,7 +152,7 @@ Nobil Auto
                             <a href="#">
                                 <div class="new-img-box">
                                     <div class="img-gradient"></div>
-                                    <img src="/assets/images/home/news-img/news-car.jpg" alt="car">
+                                    <img src="/assets/images/home/news-img/news-car.jpg" loading="lazy" alt="car">
                                     <div class="new-views">
                                         <div class="views">
                                             <i class="fa-regular fa-eye"></i>
@@ -187,7 +187,7 @@ Nobil Auto
                             <a href="#">
                                 <div class="new-img-box">
                                     <div class="img-gradient"></div>
-                                    <img src="/assets/images/home/news-img/news-car.jpg" alt="car">
+                                    <img src="/assets/images/home/news-img/news-car.jpg" loading="lazy" alt="car">
                                     <div class="new-views">
                                         <div class="views">
                                             <i class="fa-regular fa-eye"></i>
@@ -293,7 +293,7 @@ Nobil Auto
                     </div>
 
                     <div class="benefit-img">
-                        <img src="/assets/images/home/benefit.jpg" alt="benefit">
+                        <img src="/assets/images/home/benefit.jpg" loading="lazy" alt="benefit">
                     </div>
                 </div>
             </div>
@@ -315,17 +315,15 @@ Nobil Auto
                 </div>
             </div>
         </section>
-
-        <section class="adds">
-            <div class="adds-container container">
-                <h1>Noi facem ca găsirea mașinii <br /> potrivite să fie mai simplă</h1>
-                <p>
-                    La NobilAuto, ceea ce contează pentru noi este să facem ca 
-                    experiența de căutare și de cumpărare a mașinii dvs. să fie 
-                    cât mai simplă, astfel încât să puteți găsi rapid mașina potrivită 
-                    și să puteți continua să o faceți să fie a dvs.
-                </p>
+        <div class="parallax-box">
+            <div class="parallax-image"></div>
+            <div class="container">
+                <div class="parallax-text">
+                    <h1>Suntem alături de tine cu oferte generoase pentru viitorul tău automobil</h1>
+                    <p>Descoperiți plăcerea de a vă achiziționa automobilul dorit cu cele mai atractive condiții de finanțare,
+                        oferite de Parcul Auto NobilAuto</p>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
 @endsection
