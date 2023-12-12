@@ -51,9 +51,9 @@
                             
                         <div class="nav-menu">
                             <div class="lines">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
+                                <div class="line @if(isset($page) && $page == 'home') white @endif"></div>
+                                <div class="line @if(isset($page) && $page == 'home') white @endif"></div>
+                                <div class="line @if(isset($page) && $page == 'home') white @endif"></div>
                             </div>
 
                             <div class="menu">
@@ -87,7 +87,7 @@
             <section class="logo-links">
                 <div class="links-container container">
                     <div class="footer-logo">
-                        <a href="/"><img src="/assets/images/footer/footerLogo.svg" alt=""></a>
+                        <a href="/"><img src="/assets/images/footer/footerLogo.svg" loading="lazy" alt="Nobil Auto"></a>
                     </div>
     
                     <div class="footer-links">
