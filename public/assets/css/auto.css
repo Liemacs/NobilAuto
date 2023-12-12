@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 /* Dropdown */
@@ -354,7 +355,7 @@
 
 .cars-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     transition: all 200ms linear;
 }
@@ -381,6 +382,7 @@
 
 .cars-items .item p {
     font-weight: 400;
+    padding: 7px 0;
 }
 
 .cars-items .item-img {
@@ -450,7 +452,7 @@
 }
 
 .cars-items .details {
-    border-top: 1px solid rgba(var(--color-black), 1);
+    border-top: 1px solid rgba(var(--color-black), 0.2);
 }
 
 .cars-items .details {
