@@ -354,7 +354,6 @@
 /* Item */
 
 .cars-items {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -362,8 +361,7 @@
 }
 
 .cars-items .item {
-    /* max-width: 270px; */
-    width: 100%;
+    max-width: 270px;
     padding: 10px 12px;
     color: rgba(var(--color-black), 1);
     border: 1px solid rgba(var(--color-black), 0.2);

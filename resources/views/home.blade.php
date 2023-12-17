@@ -318,7 +318,7 @@ Nobil Auto
         <div class="parallax-box">
             <div class="parallax-image"></div>
             <div class="container">
-                <div class="parallax-text choose-us">
+                <div class="parallax-text">
                     <h1>Suntem alături de tine cu oferte generoase pentru viitorul tău automobil</h1>
                     <p>Descoperiți plăcerea de a vă achiziționa automobilul dorit cu cele mai atractive condiții de finanțare,
                         oferite de Parcul Auto NobilAuto</p>

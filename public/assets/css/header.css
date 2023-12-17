@@ -105,13 +105,11 @@
     transform: rotate(-60deg);
 }
 
-.nav-actions .nav-icons .lang,
-.mobile .lang {
+.nav-actions .nav-icons .lang {
     position: relative;
 }
 
-.nav-actions .nav-icons .lang .circle,
-.mobile .lang .circle {
+.nav-actions .nav-icons .lang .circle {
     position: absolute;
     background-color: rgba(var(--color-white), 1);
     bottom: 2px;
@@ -121,9 +119,7 @@
     border-radius: 5px;
 }
 
-.nav-actions .nav-icons .nav-menu,
-.mobile .lang,
-.mobile .sun {
+.nav-actions .nav-icons .nav-menu {
     display: none;
 }
 
@@ -191,7 +187,7 @@
 }
 
 .nav-actions .nav-icons .menu.active {
-    width: 100%;
+    width: 400px;
 }
 
 .nav-actions .nav-icons .menu .nav-intro {
