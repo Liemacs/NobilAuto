@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AutoController;
 use App\Http\Controllers\CreditController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AutoDetailsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,5 @@ Route::get('/credit', [CreditController::class, 'index'])->name('credit');
 
 // Credit
 Route::get('/contacte', [ContactController::class, 'index'])->name('contacts');
+
+Route::get('/automobile/auto-details', [AutoDetailsController::class, 'index'])->name('auto-details');

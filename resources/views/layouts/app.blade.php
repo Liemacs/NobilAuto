@@ -17,7 +17,7 @@
                             <a href="/" class="@if(isset($page) && $page == 'home') active @endif">Acasă</a>
                         </li>
                         <li>
-                            <a href="{{route('auto')}}" class="@if(isset($page) && $page == 'auto') active @endif">Automobile</a>
+                            <a href="{{route('auto')}}" class="@if(isset($page) && str_contains($page, 'auto') == true ) active @endif">Automobile</a>
                         </li>
                         <li>
                             <a href="{{route('credit')}}" class="@if(isset($page) && $page == 'credit') active @endif">Cumpără în rate</a>
