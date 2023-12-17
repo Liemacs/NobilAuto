@@ -26,17 +26,171 @@
         display: flex;
     }
 
-    .footer .logo-links .links-container {
+    .loan-img {
+        display: none;
+    }
+
+    .allure-section .allure-container .allure-image {
+        max-width: 410px;
+        height: 350px;
+    }
+
+    .allure-section .allure-container .allure-text {
+        width: 35%;
+        font-size: 20px;
+    }
+
+    .footer .logo-links .links-container,
+    .loan-box {
         flex-direction: column;
+    }
+    .footer .footer-links {
+        padding-top: 30px;
+        gap: 100px;
     }
 
     .footer .logo-links .links-container .footer-logo img {
         width: 200px;
     }
+
+    .banner .banner-container form .filter-btn button {
+        padding: 10px;
+    }
 }
 @media (max-width: 768px) {
+    .banner .banner-container form,
+    .benefits .benefits-box {
+        flex-direction: column;
+    }
+
+    .benefits .benefits-content {
+        padding-bottom: 20px;
+    }
+
+    .benefits .benefits-content .benefit-box,
+    .benefits .benefits-content .benefit-box .benefit-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits .benefits-content .benefit-box .benefit-text p,
+    .achivements .achivements-container .achivement {
+        text-align: center;
+    }
+
+    .benefits .benefits-box .benefit-img img {
+        height: 400px;
+    }
+
+    .achivements .achivements-container .achivement span {
+        font-size: 32px;
+    }
+
+    .parallax-box .parallax-text,
+    .allure-section .allure-container,
+    .allure-section .allure-container .allure-text {
+        width: 100%;
+    }
+
+    .allure-section .allure-container .allure-image {
+        max-width: 100%;
+    }
+
+    .allure-section .allure-container .allure-image img {
+        width: 100%;
+        transform: translateX(0);
+        object-fit: cover;
+    }
+
+    .allure-section .allure-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .allure-section .allure-container::after {
+        content: none;
+    }
+
 }
 @media (max-width: 600px) {
+    .banner .banner-container .banner-titles h1 {
+        font-size: 48px;
+    }
+
+    .loan-calc .loan-container .loan-rate-period-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer .footer-links {
+        gap: 40px;
+    }
+
+    .achivements .achivements-container {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .mobile-dissapear {
+        display: none;
+    }
+
+    .mobile .lang,
+    .mobile .sun {
+        display: flex;
+    }
 }
 @media (max-width: 500px) {
+    .news .news-container .news-title h1,
+    .footer .footer-links ul li,
+    .footer .footer-links ul h4,
+    .footer .footer-links ul li p,
+    .copyright p {
+        text-align: center;
+    }
+
+    .loan-calc .loan-container > button, .allure-section .allure-container button,
+    .allure-section .allure-container .allure-text {
+        width: 100%;
+    }
+
+    .conditions {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .allure-section .allure-container .allure-image img {
+        height: 100%;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .footer-links,
+    .footer .copy .copy-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .copy .copy-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits .benefits-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .achivements .achivements-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    
 }
