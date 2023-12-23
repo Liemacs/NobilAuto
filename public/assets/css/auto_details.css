@@ -66,7 +66,261 @@
     justify-content: center;
 }
 
-
 main #logo {
     display: block !important;
+}
+
+.auto-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.auto-actions .left,
+.auto-actions .right,
+.auto-actions .left > *,
+.auto-actions .right > * {
+    display: flex;
+    align-items: center;
+}
+
+.auto-actions .left {
+    gap: 10px;
+}
+
+.auto-stock {
+    color: rgba(var(--color-white), 1);
+    font-weight: 400;
+}
+
+.auto-actions .right {
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.auto-actions .left > *,
+.auto-actions .right > * {
+    position: relative;
+    gap: 5px;
+}
+
+.auto-stock {
+    background: rgba(var(--color-orange), 1);
+    border-radius: 50px;
+    padding: 6px 20px;
+}
+
+.auto-actions .right > *::after {
+    content: "";
+    position: absolute;
+    background: rgba(var(--color-black), 0.05);
+    border-radius: var(--border-radius-1);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 200ms linear;
+}
+
+.auto-actions .right > *:hover::after {
+    opacity: 1;
+    transition: all 200ms linear;
+}
+
+.name-prices {
+    color: rgba(var(--color-black), 1);
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-prices h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.name-prices .price {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.name-prices .price h3 {
+    font-size: 32px;
+}
+
+.name-prices .price span {
+    font-size: 20px;
+}
+
+.preview-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.preview-info li:not(:nth-child(1))::before {
+    content: "\\";
+    padding: 0 5px;
+}
+
+.auto-details-similar-call {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+}
+
+.auto-details-similar-call .auto-details-similar {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auto-details-similar-call .auto-details-similar .auto-details-item {
+    width: 100%;
+}
+
+.auto-details-similar-call .auto-details-similar .auto-details-item ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(var(--color-black), 0.1);
+    padding-bottom: 5px;
+    margin-top: 18px;
+}
+
+.auto-details-similar .auto-details-item ul li h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.auto-details-similar .auto-details-item .title,
+.auto-call .sticky p {
+    width: 100%;
+    background: rgba(238, 242, 246, 1);
+    border-radius: var(--border-radius-1);
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.auto-details-similar .cars-items-box {
+    margin: 200px 0 50px;
+}
+
+.auto-details-similar .cars-items-box header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auto-details-similar .cars-items-box header h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.auto-details-similar .cars-items-box header .more {
+    color: rgba(var(--color-black), 1);
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.auto-details-similar .cars-items-box header .more i {
+    background: rgba(var(--color-orange), 1);
+    color: rgba(var(--color-white), 1);
+    border-radius: var(--border-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.auto-call .sticky p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auto-call .sticky button {
+    background: transparent;
+    border: 1px solid rgba(var(--color-orange), 1);
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    transition: all 200ms linear;
+}
+
+.auto-call .sticky button:hover {
+    background: rgba(var(--color-orange), 1);
+    color: rgba(var(--color-white), 1);
+    transition: all 200ms linear;
+}
+
+.auto-details-similar-call .auto-call {
+    width: 25%;
+    z-index: 10;
+    margin-bottom: 50px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.auto-call .sticky form {
+    border: 1px solid rgba(var(--color-black), 0.2);
+    border-radius: var(--border-radius-1);
+    padding: 20px;
+}
+
+.auto-call .sticky form:not(button) > * {
+    margin-bottom: 20px;
+}
+
+.auto-call .sticky form button {
+    cursor: pointer;
+    background: rgba(var(--color-orange), 1);
+    color: rgba(var(--color-white), 1);
+    transition: all 200ms linear;
+}
+
+.auto-call .sticky form button:hover {
+    background: rgba(var(--color-orange), 0.9);
+    transition: all 200ms linear;
+}
+
+.auto-call .sticky form input,
+.auto-call .sticky form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(var(--color-black), 0.2);
+    border-radius: var(--border-radius-1);
+    padding: 15px;
+    font-family: Inter;
+    font-size: var(--font-small);
+}
+
+.auto-call .sticky form textarea {
+    color: rgba(var(--color-black), 0.7);
+}
+
+.auto-call .sticky form textarea:focus {
+    color: rgba(var(--color-black), 1);
 }

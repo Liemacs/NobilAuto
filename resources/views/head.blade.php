@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="/assets/css/normalize.css" />
 <link rel="stylesheet" href="/assets/css/auto.css">
 <link rel="stylesheet" href="/assets/css/contacts.css">
+<link rel="stylesheet" href="/assets/css/comparare.css">
 <link rel="stylesheet" href="/assets/css/auto_details.css">
 <link rel="stylesheet" href="/assets/css/responsiv.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
