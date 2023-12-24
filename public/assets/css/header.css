@@ -91,6 +91,11 @@
     cursor: pointer;
 }
 
+.nav-actions .nav-icons i {
+    font-size: 16px;
+    color: rgba(var(--color-white), 1);
+}
+
 .nav-actions .nav-icons > svg {
     transition: all 200ms linear;
 }
@@ -100,7 +105,7 @@
     transform: rotate(-15deg);
 }
 
-.nav-actions .nav-icons > svg:nth-child(3):hover {
+.nav-actions .nav-icons > svg:nth-child(4):hover {
     transition: all .5s linear;
     transform: rotate(-60deg);
 }
@@ -252,4 +257,8 @@
 .header button.black {
     color: rgba(var(--color-black), 1);
     border: 1px solid rgba(var(--color-black), 1);
+}
+
+.header i.black {
+    color: rgba(var(--color-black), 1);
 }

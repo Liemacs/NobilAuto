@@ -3,11 +3,19 @@
 }
 
 .automobile header,
-.automobile .breadcrumb {
+.automobile .breadcrumb,
+.comparare header,
+.comparare .breadcrumb {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0;
+}
+
+.automobile header,
+.comparare header {
+    margin: 80px 0 40px;
 }
 
 .breadcrumb {
@@ -24,11 +32,8 @@
     padding: 0 5px;
 }
 
-.automobile header {
-    margin: 80px 0 40px 0;
-}
-
-.automobile header h2 {
+.automobile header h2,
+.comparare header h2 {
     font-size: 48px;
 }
 

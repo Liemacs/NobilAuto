@@ -150,7 +150,7 @@
                 </div>
 
             </aside>
-            <div class="cars-items-box">
+            <section class="cars-items-box">
                 <div class="cars-details">
                     <p>Am găsit <b>325</b> mașini disponibile</p>
                     <div class="cars-sort-box">
@@ -320,7 +320,7 @@
 
                     </ul>
                 </div>
-            </div>
+            </section>
 
 
     </section>
