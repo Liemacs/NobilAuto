@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.querySelector('.filter-mobile');
+    const filterMenu = document.querySelector('.open-mobile');
+    const filterLine = document.getElementsByClassName('filter-line')
+
+    filterButton.addEventListener('click', function () {
+        filterMenu.classList.toggle('active');
+        filterButton.classList.toggle('active');
+        for (let i = 0; i < filterLine.length; i++) {
+            filterLine[i].classList.toggle('active');
+        }
+    });
+});
+
 $(document).ready(function(){
     $('.owl-categories').owlCarousel({
         loop: true,
@@ -24,6 +38,8 @@ $(document).ready(function(){
             600: {
                 items: 3,
                 mouseDrag: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
             },
             1000: {
                 items: 5,

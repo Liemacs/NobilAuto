@@ -22,7 +22,8 @@
         display: none;
     }
 
-    .nav-actions .nav-icons .nav-menu {
+    .nav-actions .nav-icons .nav-menu,
+    .filter-mobile {
         display: flex;
     }
 
@@ -55,6 +56,51 @@
 
     .banner .banner-container form .filter-btn button {
         padding: 10px;
+    }
+
+    .contacts-container .contacts-details h3, 
+    .contacts-container .contact-form h3 {
+        font-size: 24px;
+    } 
+
+    .cars-content .open-mobile {
+        width: 0;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -50px;
+        background-color: rgba(var(--color-white), 1);
+        z-index: 250;
+        transition: 0.5s;
+        border-radius: 0;
+    }
+
+    .cars-content .open-mobile.active {
+       width: 500px;
+       right: 0;
+       display: block;
+    }
+    .filter-mobile.active {
+        transform: translateY(-150px);
+        /* top: 0; */
+        z-index: 300;
+    }
+
+    .filter-mobile .filter-line:nth-of-type(1).active::after, 
+    .filter-mobile .filter-line:nth-of-type(2).active::after, 
+    .filter-mobile .filter-line:nth-of-type(3).active::after {
+        opacity: 0;
+    }
+
+    .filter-mobile .filter-line:nth-of-type(1).active {
+        transform: translateY(1px) rotate(-45deg);
+    }
+    .filter-mobile .filter-line:nth-of-type(2).active {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    .filter-mobile .filter-line:nth-of-type(3).active {
+        transform: translateY(-14px) rotate(45deg);
     }
 }
 @media (max-width: 768px) {
@@ -112,6 +158,17 @@
         content: none;
     }
 
+    .contacts-details .details-box,
+    .cars-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
 }
 @media (max-width: 600px) {
     .banner .banner-container .banner-titles h1 {
@@ -140,7 +197,19 @@
     .mobile .sun {
         display: flex;
     }
+
+    .automobile header h2 {
+        font-size: 28px;
+    }
 }
+
+@media (max-width: 550px) {
+    .cars-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 @media (max-width: 500px) {
     .news .news-container .news-title h1,
     .footer .footer-links ul li,
@@ -178,9 +247,7 @@
     .footer .copy .copy-container {
         gap: 15px;
     }
-}
 
-@media (max-width: 500px) {
     .benefits .benefits-content {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -189,8 +256,35 @@
         flex-direction: column;
         gap: 40px;
     }
+
+    .contacts-details .details-box {
+        display: flex;
+    }
+
+    .contacts-container .contact-form form .form-input {
+        flex-direction: column;
+    }
+
+    .automobile header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 380px) {
-    
+    .cars-items-box .cars-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cars-sort-box .filters,
+    .cars-sort-box {
+        width: 100%;
+    }
+
+    .dropdown:checked + label {
+        width: 100%;
+    }
 }

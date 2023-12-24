@@ -9,7 +9,7 @@
             </ul>
         </header>
         <div class="cars-content">
-            <aside>
+            <aside class="open-mobile">
                 <div class="cars-filtre">
                     <h2>
                         Filtre
@@ -154,10 +154,9 @@
                 <div class="cars-details">
                     <p>Am găsit <b>325</b> mașini disponibile</p>
                     <div class="cars-sort-box">
-                        <p>Sortează:</p>
                         <div class="filters">
                             <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                            <label class="for-dropdown" for="dropdown">Sort<i
+                            <label class="for-dropdown" for="dropdown">Sortează<i
                                     class="uil fa-solid fa-chevron-down"></i></i></label>
                             <div class="section-dropdown">
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -165,6 +164,12 @@
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
                                 <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
                             </div>
+                        </div>
+
+                        <div class="filter-mobile">
+                            <div class="filter-line"></div>
+                            <div class="filter-line"></div>
+                            <div class="filter-line"></div>
                         </div>
                     </div>
                 </div>
