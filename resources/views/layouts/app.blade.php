@@ -77,19 +77,23 @@
                                 <div class="nav-intro">
                                     <h4>Menu</h4>
                                 </div>
-                                <ul>
-                                    <li>
-                                        <a href="/">Acasă</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('auto') }}">Automobile</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('credit') }}">Cumpără în rate</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('contacts') }}">Contacte</a>
-                                    </li>
+                                <ul> 
+                                    <li> 
+                                        <i class="fa-solid fa-house"></i> 
+                                        <a href="/">Acasă</a> 
+                                    </li> 
+                                    <li> 
+                                        <i class="fa-solid fa-car"></i> 
+                                        <a href="{{route('auto')}}">Automobile</a> 
+                                    </li> 
+                                    <li> 
+                                        <i class="fa-solid fa-credit-card"></i> 
+                                        <a href="{{route('credit')}}">Cumpără în rate</a> 
+                                    </li> 
+                                    <li> 
+                                        <i class="fa-solid fa-address-book"></i> 
+                                        <a href="{{route('contacts')}}">Contacte</a> 
+                                    </li> 
                                 </ul>
 
                                 <div class="mobile">
