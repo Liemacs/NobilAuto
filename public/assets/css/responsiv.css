@@ -81,8 +81,7 @@
        display: block;
     }
     .filter-mobile.active {
-        transform: translateY(-150px);
-        /* top: 0; */
+        transform: translateY(-155px);
         z-index: 300;
     }
 
@@ -198,14 +197,32 @@
         display: flex;
     }
 
+    .nav-actions .nav-icons .menu ul::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        width: 50px;
+        height: 4px;
+        background: rgba(var(--color-orange), 1);
+    }
+
     .automobile header h2 {
         font-size: 28px;
+    }
+
+    .nav-actions .nav-icons i {
+        color: #282828;
     }
 }
 
 @media (max-width: 550px) {
     .cars-items {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner .banner-container {
+        padding: 150px 30px;
     }
 }
 
@@ -270,6 +287,16 @@
         align-items: flex-start;
         gap: 20px;
     }
+
+    .cars-content .open-mobile.active {
+        width: 100% !important;
+    }
+
+    .categories .category-container {
+        top: 0;
+        margin-top: 25px;
+    }
+
 }
 
 @media (max-width: 380px) {
@@ -286,5 +313,9 @@
 
     .dropdown:checked + label {
         width: 100%;
+    }
+
+    .filter-mobile.active {
+        transform: translateY(-195px);
     }
 }

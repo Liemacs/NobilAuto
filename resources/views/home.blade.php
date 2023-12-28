@@ -12,8 +12,21 @@ Nobil Auto
                 </div>
                 <form>
                     <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Status<i
+                        <input class="dropdown" type="checkbox" id="dropdown-1" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown-1">
+                            Status
+                            <i class="uil fa-solid fa-chevron-down"></i>
+                        </label>
+                        <div class="section-dropdown">
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub-1" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub-1">Dropdown Sub</i></label>
+                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub-2" name="dropdown-sub" />
+                            <label class="for-dropdown-sub" for="dropdown-sub-2">Dropdown Sub</i></label>
+                        </div>
+                    </div>
+                    <div class="select-box">
+                        <input class="dropdown" type="checkbox" id="dropdown-2" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown-2">Producător<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -23,8 +36,8 @@ Nobil Auto
                         </div>
                     </div>
                     <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Producător<i
+                        <input class="dropdown" type="checkbox" id="dropdown-3" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown-3">Model<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -34,19 +47,8 @@ Nobil Auto
                         </div>
                     </div>
                     <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Model<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                        </div>
-                    </div>
-                    <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Cutie<i
+                        <input class="dropdown" type="checkbox" id="dropdown-4" name="dropdown" />
+                        <label class="for-dropdown" for="dropdown-4">Cutie<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />

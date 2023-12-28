@@ -111,19 +111,18 @@
 }
 
 .nav-actions .nav-icons .lang,
-.mobile .lang {
+.nav-actions .nav-icons .menu .mobile .lang {
     position: relative;
 }
 
 .nav-actions .nav-icons .menu .mobile {
     padding: 20px 0 0 40px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .nav-actions .nav-icons .lang .circle,
-.mobile .lang .circle {
+.mobile .lang .circle-2 {
     position: absolute;
     background-color: rgba(var(--color-white), 1);
     bottom: 2px;
@@ -131,18 +130,43 @@
     font-size: 10px;
     padding: 2px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-actions .nav-icons .lang .lang-dropdown,
+.mobile .lang .lang-dropdown {
+    position: absolute;
+    background-color: rgba(var(--color-white), 1);
+    top: 35px;
+    overflow: hidden;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 60;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav-actions .nav-icons .lang .lang-dropdown.active,
+.mobile .lang .lang-dropdown.active {
+    max-height: 120px;
+}
+
+.lang-dropdown p {
+    padding: 5px 10px;
+    transition: 0.3s;
+    color: rgba(var(--color-black), 1);
+}
+
+.lang-dropdown p:hover {
+    background-color: rgba(var(--color-orange), 1);
+    color: rgba(var(--color-white), 1);
 }
 
 .nav-actions .nav-icons .nav-menu,
 .mobile .lang,
 .mobile .sun {
     display: none;
-}
-
-.nav-actions .nav-icons .menu .mobile .lang {
-    display: flex;
-    align-items: center; 
-    gap: 15px;
 }
 
 .nav-actions .nav-icons .nav-menu .lines {
@@ -229,16 +253,6 @@
     padding: 20px 0 24px 40px;
 }
 
-.nav-actions .nav-icons .menu ul::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 40px;
-    width: 50px;
-    height: 4px;
-    background: rgba(var(--color-orange), 1);
-}
-
 .nav-actions .nav-icons .menu ul li {
     display: flex;
     align-items: center;
@@ -246,8 +260,13 @@
 }
 
 .nav-actions .nav-icons .menu ul li a {
-    color: rgba(var(--color-black), 1);
+    color: #282828;
     font-size: 16px;
+}
+
+.nav-actions .nav-icons .menu ul li i,
+.mobile a i {
+    color: #282828;
 }
 
 .header .black a:not(.active) {
