@@ -15,8 +15,8 @@
                         Filtre
                     </h2>
                     <div class="filters">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Producător<i
+                        <input class="dropdown" type="checkbox" id="producator" name="dropdown" />
+                        <label class="for-dropdown" for="producator">Producător<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -26,8 +26,8 @@
                         </div>
                     </div>
                     <div class="filters">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Model<i
+                        <input class="dropdown" type="checkbox" id="model" name="dropdown" />
+                        <label class="for-dropdown" for="model">Model<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -37,8 +37,8 @@
                         </div>
                     </div>
                     <div class="filters">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Combustibil<i
+                        <input class="dropdown" type="checkbox" id="fuel" name="dropdown" />
+                        <label class="for-dropdown" for="fuel">Combustibil<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -48,8 +48,8 @@
                         </div>
                     </div>
                     <div class="filters">
-                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown">Cutia de viteză<i
+                        <input class="dropdown" type="checkbox" id="gear" name="dropdown" />
+                        <label class="for-dropdown" for="gear">Cutia de viteză<i
                                 class="uil fa-solid fa-chevron-down"></i></i></label>
                         <div class="section-dropdown">
                             <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
@@ -155,8 +155,8 @@
                     <p>Am găsit <b>325</b> mașini disponibile</p>
                     <div class="cars-sort-box">
                         <div class="filters">
-                            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-                            <label class="for-dropdown" for="dropdown">Sortează<i
+                            <input class="dropdown" type="checkbox" id="sort" name="dropdown" />
+                            <label class="for-dropdown" for="sort">Sortează<i
                                     class="uil fa-solid fa-chevron-down"></i></i></label>
                             <div class="section-dropdown">
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />

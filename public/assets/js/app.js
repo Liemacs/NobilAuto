@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".lang");
+
+    dropdowns.forEach(dropdown => {
+    const select = dropdown.querySelector('.lang-btn');
+    const menu = dropdown.querySelector('.lang-dropdown');
+    const options = dropdown.querySelectorAll('.lang-dropdown p');
+    const selected = dropdown.querySelector('.selected');
+
+    select.addEventListener('click', () => {
+        menu.classList.toggle('active');
+
+        options.forEach(option => {
+        option.addEventListener('click', () => {
+            selected.innerHTML = option.innerHTML;
+            menu.classList.remove('active');
+        })
+        })
+    })
+    })
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector(".lines");
     const menu = document.querySelector(".menu");
     const menuLine = document.getElementsByClassName("line");
@@ -32,6 +54,8 @@ $(document).ready(function(){
         items: 3,
         lazyLoad: true,
         margin: 10,
+        autoplay: false,
+        autoplayTimeout: 5000,
         responsive: {
             0: {
                 items: 1,
@@ -39,8 +63,7 @@ $(document).ready(function(){
             600: {
                 items: 3,
                 mouseDrag: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
+                autoplay: true
             },
             1000: {
                 items: 5,
