@@ -4,11 +4,6 @@ table {
     margin-bottom: 40px;
 }
 
-.table-container {
-    overflow-x: auto;
-    max-width: 100%;
-}
-
 tr:not(thead tr) {
     background-color: rgba(var(--color-black), 0.1);
 }
@@ -101,4 +96,8 @@ tbody tr:last-of-type td:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.auto-table .empty {
+    text-align: center;
 }
