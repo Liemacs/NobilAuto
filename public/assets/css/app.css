@@ -51,9 +51,61 @@
     gap: 12px;
 }
 
-.banner .banner-container form .select-box {
+.banner .banner-container form .select-dropdown {
     width: 100%;
     position: relative;
+}
+
+.banner .banner-container form .select-btn label {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-black), 1);
+    border: 1px solid rgba(var(--color-black), 0.2);
+    border-radius: var(--border-radius-1);
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 14px 35px 0 rgba(var(--color-black), 0.2);
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+.banner .banner-container form .select-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .banner-container form .select-btn label .caret {
+    transition: 0.3s;
+}
+
+.banner .banner-container form .select-btn label .caret.clicked {
+    transform: rotate(180deg);
+}
+
+.banner .banner-container form .dropdown-options {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    border-radius: var(--border-radius-1);
+    background-color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-black), 1);
+    box-shadow: 0 14px 35px 0 rgba(var(--color-black), 0.2);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.banner .banner-container form .dropdown-options.active {
+    max-height: 350px;
+}
+
+.banner .banner-container form .dropdown-options p {
+    padding: 10px;
+    border-bottom: 1px solid #e9e9e7;
+    cursor: pointer;
 }
 
 .banner .banner-container form .filter-btn {

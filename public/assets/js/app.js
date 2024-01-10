@@ -33,6 +33,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".select-dropdown");
+
+    dropdowns.forEach(dropdown => {
+    const select = dropdown.querySelector('.select-btn label');
+    const caret = dropdown.querySelector('.caret');
+    const menu = dropdown.querySelector('.dropdown-options');
+    const options = dropdown.querySelectorAll('.dropdown-options p');
+    const selected = dropdown.querySelector('.selected');
+
+    select.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        caret.classList.toggle('clicked');
+
+        options.forEach(option => {
+        option.addEventListener('click', () => {
+            selected.innerHTML = `${option.textContent} <i class="caret fa-solid fa-chevron-down"></i>`;
+            menu.classList.remove('active');
+            caret.classList.remove('clicked');
+        })
+        })
+    })
+    })
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const filterButton = document.querySelector('.filter-mobile');
@@ -59,11 +84,12 @@ $(document).ready(function(){
         responsive: {
             0: {
                 items: 1,
+                autoplay: true,
             },
             600: {
                 items: 3,
                 mouseDrag: true,
-                autoplay: true
+                autoplay: true,
             },
             1000: {
                 items: 5,
