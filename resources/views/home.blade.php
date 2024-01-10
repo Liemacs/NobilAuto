@@ -13,52 +13,62 @@
                         >în găsirea mașinii
                         potrivite</h3>
                 </div>
-                <form data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
-                    >
-                    <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown-1" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown-1">
+                <form data-aos="fade-up" data-aos-delay="50" data-aos-duration="500>
+                    <div class="select-dropdown">
+                        <div class="select-btn">
+                            <input class="dropdown" type="checkbox" id="select-1" name="dropdown" />
+                            <label class="for-dropdown selected" for="select-1">
+
                             Status
-                            <i class="uil fa-solid fa-chevron-down"></i>
+                            <i class="caret fa-solid fa-chevron-down"></i>
                         </label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub-1" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub-1">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub-2" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub-2">Dropdown Sub</i></label>
+                        </div>
+                        <div class="dropdown-options">
+                            <p>Option 1</p>
+                            <p>Option 2</p>
+                            <p>Option 3</p>
                         </div>
                     </div>
-                    <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown-2" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown-2">Producător<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                    <div class="select-dropdown">
+                        <div class="select-btn">
+                            <input type="checkbox" id="select-2" name="dropdown" />
+                            <label class="selected" for="select-2">
+                            Producător
+                            <i class="caret fa-solid fa-chevron-down"></i>
+                        </label>
+                        </div>
+                        <div class="dropdown-options">
+                            <p>Option 1</p>
+                            <p>Option 2</p>
+                            <p>Option 3</p>
                         </div>
                     </div>
-                    <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown-3" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown-3">Model<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                    <div class="select-dropdown">
+                        <div class="select-btn">
+                            <input type="checkbox" id="select-3" name="dropdown" />
+                            <label class="selected" for="select-3">
+                            Model
+                            <i class="caret fa-solid fa-chevron-down"></i>
+                        </label>
+                        </div>
+                        <div class="dropdown-options">
+                            <p>Option 1</p>
+                            <p>Option 2</p>
+                            <p>Option 3</p>
                         </div>
                     </div>
-                    <div class="select-box">
-                        <input class="dropdown" type="checkbox" id="dropdown-4" name="dropdown" />
-                        <label class="for-dropdown" for="dropdown-4">Cutie<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
+                    <div class="select-dropdown">
+                        <div class="select-btn">
+                            <input type="checkbox" id="select-4" name="dropdown" />
+                            <label class="selected" for="select-4">
+                            Cutie
+                            <i class="caret fa-solid fa-chevron-down"></i>
+                        </label>
+                        </div>
+                        <div class="dropdown-options">
+                            <p>Option 1</p>
+                            <p>Option 2</p>
+                            <p>Option 3</p>
                         </div>
                     </div>
                     <div class="filter-btn">

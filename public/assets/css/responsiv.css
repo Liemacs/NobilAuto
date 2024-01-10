@@ -16,19 +16,31 @@
 @media (max-width: 1170px) {
 }
 @media (max-width: 1070px) {
+    .auto-photos-container {
+        flex-direction: column;
+    }
+
+    .auto-photos-container .auto-main-photo,
+    .auto-photos-container .auto-main-photo img {
+        width: 100%;
+    }
+
+    .auto-photos-container .auto-second-photos {
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        height: 100px;
+    }
 }
 @media (max-width: 993px) {
-    .header .header-container nav ul {
+    .header .header-container nav ul,
+    .loan-img,
+    .auto-call .sticky form {
         display: none;
     }
 
     .nav-actions .nav-icons .nav-menu,
     .filter-mobile {
         display: flex;
-    }
-
-    .loan-img {
-        display: none;
     }
 
     .allure-section .allure-container .allure-image {
@@ -102,6 +114,38 @@
     .filter-mobile .filter-line:nth-of-type(3).active {
         transform: translateY(-14px) rotate(45deg);
     }
+
+    .auto-details-similar-call {
+        flex-direction: column-reverse;
+    }
+
+    .auto-details-similar-call .auto-details-similar {
+        width: 100%;
+    }
+
+    .sticky {
+        display: flex;
+        gap: 10px;
+    }
+
+    .auto-details-similar-call .auto-call {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .auto-details-similar .cars-items-box {
+        margin-top: 50px;
+    }
+
+    .name-prices .price {
+        justify-content: start;
+        flex-direction: row-reverse;
+    }
+
+    .auto-table thead th i.fa-regular {
+        opacity: 1;
+    }
+
 }
 @media (max-width: 768px) {
     .banner .banner-container form,
@@ -169,6 +213,16 @@
         gap: 25px;
     }
 
+    .auto-photos-container .auto-main-photo img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .auto-photos-container .auto-main-photo {
+        height: 250px;
+    }
+
 }
 @media (max-width: 600px) {
     .banner .banner-container .banner-titles h1 {
@@ -214,6 +268,27 @@
 
     .nav-actions .nav-icons i {
         color: #282828;
+    }
+
+    .auto-photos-container .auto-second-photos {
+        display: none;
+    }
+
+    .auto-actions,
+    .name-prices {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .auto-actions .right,
+    .auto-actions .left {
+        justify-content: space-between;
+    }
+
+    .auto-table thead th i.fa-regular {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
     }
 }
 
@@ -285,7 +360,8 @@
         flex-direction: column;
     }
 
-    .automobile header {
+    .automobile header,
+    .comparare header {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
@@ -298,6 +374,41 @@
     .categories .category-container {
         top: 0;
         margin-top: 25px;
+    }
+
+    .auto-actions {
+        margin-bottom: 50px;
+    }
+
+    .name-prices h1,
+    .name-prices .price h3,
+    .automobile header h2,
+    .comparare header h2 {
+        font-size: 28px;
+    }
+
+    .name-prices .price span {
+        font-size: 16px;
+    }
+
+    .auto-details-similar .cars-items-box header h3 {
+        font-size: 18px;
+    }
+
+    .auto-table thead th {
+        max-width: none;
+        min-width: auto;
+        height: auto;
+    }
+    
+    .auto-table thead th button {
+        background-color: rgba(var(--color-white), 1);
+    }
+
+    .auto-table thead th button i {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
     }
 
 }
@@ -321,4 +432,47 @@
     .filter-mobile.active {
         transform: translateY(-195px);
     }
-}
+
+    .auto-actions .left {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+    .auto-details-similar .cars-items-box header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tags {
+        flex-direction: column;
+    }
+
+    .tag {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .auto-photos-container .auto-main-photo {
+        height: 230px;
+    }
+
+    .preview-info {
+        flex-wrap: wrap;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    .auto-table thead th i.fa-regular {
+        margin: 10px;
+    }
+
+    .auto-table thead th img {
+        height: 70px;
+        /* width: 50px; */
+        object-fit: cover;
+    }
+
+} 
