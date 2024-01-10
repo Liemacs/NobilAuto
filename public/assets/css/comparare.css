@@ -4,6 +4,11 @@ table {
     margin-bottom: 40px;
 }
 
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
 tr:not(thead tr) {
     background-color: rgba(var(--color-black), 0.1);
 }

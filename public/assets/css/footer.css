@@ -55,14 +55,15 @@
 }
 
 .footer .socials .social-img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     padding: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--border-round);
     cursor: pointer;
+    line-height: 0;
     transition: 0.5s;
 }
 
