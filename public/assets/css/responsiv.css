@@ -16,27 +16,467 @@
 @media (max-width: 1170px) {
 }
 @media (max-width: 1070px) {
+    .auto-photos-container {
+        flex-direction: column;
+    }
+
+    .auto-photos-container .auto-main-photo {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .auto-photos-container .auto-main-photo img {
+        width: 100vw;
+        background-size: cover;
+    }
+
+    .auto-photos-container .auto-second-photos {
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        height: 100px;
+    }
 }
 @media (max-width: 993px) {
-    .header .header-container nav ul {
+    .header .header-container nav ul,
+    .loan-img,
+    .auto-call .sticky form {
         display: none;
     }
 
-    .nav-actions .nav-icons .nav-menu {
+    .nav-actions .nav-icons .nav-menu,
+    .filter-mobile {
         display: flex;
     }
 
-    .footer .logo-links .links-container {
+    .allure-section .allure-container .allure-image {
+        max-width: 410px;
+        height: 350px;
+    }
+
+    .allure-section .allure-container .allure-text {
+        width: 35%;
+        font-size: 20px;
+    }
+
+    .footer .logo-links .links-container,
+    .loan-box {
         flex-direction: column;
+    }
+    .footer .footer-links {
+        padding-top: 30px;
+        gap: 100px;
     }
 
     .footer .logo-links .links-container .footer-logo img {
         width: 200px;
     }
+
+    .banner .banner-container form .filter-btn button {
+        padding: 10px;
+    }
+
+    .contacts-container .contacts-details h3, 
+    .contacts-container .contact-form h3 {
+        font-size: 24px;
+    } 
+
+    .cars-content .open-mobile {
+        width: 0;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -50px;
+        background-color: rgba(var(--color-white), 1);
+        z-index: 250;
+        transition: 0.5s;
+        border-radius: 0;
+    }
+
+    .cars-content .open-mobile.active {
+       width: 500px;
+       right: 0;
+       display: block;
+    }
+    .filter-mobile.active {
+        transform: translateY(-155px);
+        z-index: 300;
+    }
+
+    .filter-mobile .filter-line:nth-of-type(1).active::after, 
+    .filter-mobile .filter-line:nth-of-type(2).active::after, 
+    .filter-mobile .filter-line:nth-of-type(3).active::after {
+        opacity: 0;
+        
+    }
+
+    .filter-mobile .filter-line:nth-of-type(1).active {
+        transform: translateY(1px) rotate(-45deg);
+    }
+    .filter-mobile .filter-line:nth-of-type(2).active {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    .filter-mobile .filter-line:nth-of-type(3).active {
+        transform: translateY(-14px) rotate(45deg);
+    }
+    .auto-details-similar-call {
+        flex-direction: column-reverse;
+    }
+
+    .auto-details-similar-call .auto-details-similar {
+        width: 100%;
+    }
+
+    .sticky {
+        display: flex;
+        gap: 10px;
+    }
+
+    .auto-details-similar-call .auto-call {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .auto-details-similar .cars-items-box {
+        margin-top: 50px;
+    }
+
+    .name-prices .price {
+        justify-content: start;
+        flex-direction: row-reverse;
+    }
+
+    .auto-table thead th i.fa-regular {
+        opacity: 1;
+    }
 }
 @media (max-width: 768px) {
+    .banner .banner-container form,
+    .benefits .benefits-box {
+        flex-direction: column;
+    }
+
+    .benefits .benefits-content {
+        padding-bottom: 20px;
+    }
+
+    .benefits .benefits-content .benefit-box,
+    .benefits .benefits-content .benefit-box .benefit-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits .benefits-content .benefit-box .benefit-text p,
+    .achivements .achivements-container .achivement {
+        text-align: center;
+    }
+
+    .benefits .benefits-box .benefit-img img {
+        height: 400px;
+    }
+
+    .achivements .achivements-container .achivement span {
+        font-size: 32px;
+    }
+
+    .parallax-box .parallax-text,
+    .allure-section .allure-container,
+    .allure-section .allure-container .allure-text {
+        width: 100%;
+    }
+
+    .allure-section .allure-container .allure-image {
+        max-width: 100%;
+    }
+
+    .allure-section .allure-container .allure-image img {
+        width: 100%;
+        transform: translateX(0);
+        object-fit: cover;
+    }
+
+    .allure-section .allure-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .allure-section .allure-container::after {
+        content: none;
+    }
+
+    .contacts-details .details-box,
+    .cars-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .auto-photos-container .auto-main-photo img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .auto-photos-container .auto-main-photo {
+        height: 250px;
+    }
+
 }
 @media (max-width: 600px) {
+    .banner .banner-container .banner-titles h1 {
+        font-size: 48px;
+    }
+
+    .loan-calc .loan-container .loan-rate-period-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer .footer-links {
+        gap: 40px;
+    }
+
+    .achivements .achivements-container {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .mobile-dissapear {
+        display: none;
+    }
+
+    .mobile .lang,
+    .mobile .sun {
+        display: flex;
+    }
+
+    .nav-actions .nav-icons .menu ul::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        width: 50px;
+        height: 4px;
+        background: rgba(var(--color-orange), 1);
+    }
+
+    .automobile header h2 {
+        font-size: 28px;
+    }
+
+    .nav-actions .nav-icons i {
+        color: #282828;
+    }
+
+    .auto-photos-container .auto-second-photos {
+        display: none;
+    }
+
+    .auto-actions,
+    .name-prices {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .auto-actions .right,
+    .auto-actions .left {
+        justify-content: space-between;
+    }
+
+    .auto-table thead th i.fa-regular {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
 }
+
+@media (max-width: 550px) {
+    .cars-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner .banner-container {
+        padding: 150px 30px;
+    }
+}
+
+
 @media (max-width: 500px) {
+    
+
+    .news .news-container .news-title h1,
+    .footer .footer-links ul li,
+    .footer .footer-links ul h4,
+    .footer .footer-links ul li p,
+    .copyright p {
+        text-align: center;
+    }
+
+    .loan-calc .loan-container > button, .allure-section .allure-container button,
+    .allure-section .allure-container .allure-text {
+        width: 100%;
+    }
+
+    .conditions {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .allure-section .allure-container .allure-image img {
+        height: 100%;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .footer-links,
+    .footer .copy .copy-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .copy .copy-container {
+        gap: 15px;
+    }
+
+    .benefits .benefits-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .achivements .achivements-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contacts-details .details-box {
+        display: flex;
+    }
+
+    .contacts-container .contact-form form .form-input {
+        flex-direction: column;
+    }
+
+    .automobile header,
+    .comparare header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cars-content .open-mobile.active {
+        width: 100% !important;
+    }
+
+    .categories .category-container {
+        top: 0;
+        margin-top: 25px;
+    }
+
+    .auto-actions {
+        margin-bottom: 50px;
+    }
+
+    .name-prices h1,
+    .name-prices .price h3,
+    .automobile header h2,
+    .comparare header h2 {
+        font-size: 28px;
+    }
+
+    .name-prices .price span {
+        font-size: 16px;
+    }
+
+    .auto-details-similar .cars-items-box header h3 {
+        font-size: 18px;
+    }
+
+    .auto-table thead th {
+        max-width: none;
+        min-width: auto;
+        height: auto;
+    }
+
+    .auto-table thead th button {
+        background-color: rgba(var(--color-white), 1);
+    }
+
+    .auto-table thead th button i {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .tags {
+        display: none;
+    }
+    .cars-items-box .cars-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cars-sort-box .filters,
+    .cars-sort-box {
+        width: 100%;
+    }
+
+    .dropdown:checked + label {
+        width: 100%;
+    }
+
+    .filter-mobile.active {
+        transform: translateY(-195px);
+    }
+
+    .auto-actions .left {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+    .auto-details-similar .cars-items-box header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tags {
+        flex-direction: column;
+    }
+
+    .tag {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .auto-photos-container .auto-main-photo {
+        height: 230px;
+    }
+
+    .preview-info {
+        flex-wrap: wrap;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    .auto-table thead th i.fa-regular {
+        margin: 10px;
+    }
+
+    .auto-table thead th img {
+        height: 70px;
+        /* width: 50px; */
+        object-fit: cover;
+}
 }

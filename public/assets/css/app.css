@@ -8,7 +8,7 @@
 
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: url("/assets/images/home/banner/hero-bg.png");
     background-size: cover;
     background-position: bottom;
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+    padding: 250px 30px;
 }
 
 .banner .banner-container .banner-titles {
@@ -43,16 +44,69 @@
 }
 
 .banner .banner-container form {
-    background-color: rgba(var(--color-white), 1);
+    background-color: rgba(var(--color-white), 0.5);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
     display: flex;
     gap: 12px;
 }
 
-.banner .banner-container form .select-box {
+.banner .banner-container form .select-dropdown {
     width: 100%;
     position: relative;
+}
+
+.banner .banner-container form .select-btn label {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-black), 1);
+    border: 1px solid rgba(var(--color-black), 0.2);
+    border-radius: var(--border-radius-1);
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 14px 35px 0 rgba(var(--color-black), 0.2);
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+.banner .banner-container form .select-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .banner-container form .select-btn label .caret {
+    transition: 0.3s;
+}
+
+.banner .banner-container form .select-btn label .caret.clicked {
+    transform: rotate(180deg);
+}
+
+.banner .banner-container form .dropdown-options {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    border-radius: var(--border-radius-1);
+    background-color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-black), 1);
+    box-shadow: 0 14px 35px 0 rgba(var(--color-black), 0.2);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.banner .banner-container form .dropdown-options.active {
+    max-height: 350px;
+}
+
+.banner .banner-container form .dropdown-options p {
+    padding: 10px;
+    border-bottom: 1px solid #e9e9e7;
+    cursor: pointer;
 }
 
 .banner .banner-container form .filter-btn {
@@ -99,7 +153,7 @@
 
 .categories .category-container .category-box {
     width: 100%;
-    height: 200px;
+    height: 170px;
     border-radius: var(--border-radius-1);
     background-color: rgba(var(--color-orange), 1);
     display: flex;
@@ -109,11 +163,36 @@
     gap: 15px;
     cursor: pointer;
     transition: 0.5s;
+    backdrop-filter: blur(20px);
+}
+
+.categories .category-container .category-box svg {
+    margin-bottom: 20px;
 }
 
 .categories .category-container .category-box:hover {
-    filter: brightness(85%);
+    background-color: rgba(var(--color-black), 0.1);
+    backdrop-filter: blur(20px);
 }
+
+.categories .category-container .category-box span,
+.categories .category-container .category-box path,
+.categories .category-container .category-box svg  {
+    transition: 0.5s;
+}
+
+.categories .category-container .category-box:hover span {
+    color: rgba(var(--color-black), .6);
+}
+
+.categories .category-container .category-box:hover path {
+    fill: rgba(var(--color-orange), 1);
+}
+
+.categories .category-container .category-box:hover svg {
+    scale: 1.65;
+}
+
 
 .owl-categories .owl-item img {
     width: auto;
@@ -343,6 +422,7 @@
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-2);
+    object-fit: cover;
 }
 
 /* End Benefits Section */
@@ -355,7 +435,7 @@
 
 .achivements .achivements-container {
     display: flex;
-    padding: 70px 0;
+    padding: 70px 30px;
     justify-content: center;
     gap: 100px;
 }
@@ -385,3 +465,15 @@
 }
 
 /* End Adds Section */
+
+.hidden {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 10;
+}
