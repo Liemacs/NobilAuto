@@ -8,29 +8,30 @@
         </ul>
         <div class="auto-photos-container">
             <div class="auto-main-photo">
-                <img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90" loading='lazy'>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90" loading='lazy'></a>
+                
                 <div class="tags">
-                    <div class="tag hot-offer active">
+                    <div class="tag hot-offer active" data-aos="fade-in" data-aos-delay="0">
                         <p>Ofertă specială</p>
                     </div>
-                    <div class="tag reduced-price active">
+                    <div class="tag reduced-price active" data-aos="fade-in" data-aos-delay="100">
                         <p>Preț redus</p>
                     </div>
                 </div>
             </div>
             <div class="auto-second-photos">
-                <div class="auto-second-photo-item"><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
-                        loading='lazy'></div>
-                <div class="auto-second-photo-item"><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
-                        loading='lazy'></div>
-                <div class="auto-second-photo-item"><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
-                        loading='lazy'></div>
-                <div class="auto-second-photo-item"><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
-                        loading='lazy'></div>
-                <div class="auto-second-photo-item"><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
-                        loading='lazy'></div>
-                <div class="auto-second-photo-item"><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
-                        loading='lazy'></div>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
+                    loading='lazy'></a>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
+                    loading='lazy'></a>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
+                    loading='lazy'></a>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
+                    loading='lazy'></a>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
+                    loading='lazy'></a>
+                <a href="/assets/images/auto/volvo-x90.jpg" class="auto-second-photo-item" data-lightbox="gallery" ><img src="/assets/images/auto/volvo-x90.jpg" alt="volvo x90"
+                    loading='lazy'></a>
             </div>
         </div>
     </section>
@@ -81,47 +82,47 @@
                 <div class="auto-details-item">
                     <p class="title">Prezentare generală</p>
                     <ul>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Producător</h4>
                             <p>Volvo</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Model</h4>
                             <p>XC 90</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Culoarea</h4>
                             <p>Alb</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Tipul de tracțiune</h4>
                             <p>4x4</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Transmisie</h4>
                             <p>Automată</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Anul</h4>
                             <p>2021</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Kilometraj (km)</h4>
                             <p>280,000</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Motor (cm³)</h4>
                             <p>3000</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Numărul de uşi</h4>
                             <p>5</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Tip Combustibil</h4>
                             <p>Diesel</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-offset="50">
                             <h4>Tip caroserie</h4>
                             <p>SUV</p>
                         </li>
@@ -307,16 +308,16 @@
                     </div>
                 </div>
             </div>
-            <div class="auto-call" id="auto-call">
+            <div class="auto-call" id="auto-call" data-aos="fade-up" data-aos-offset="50" data-aos-delay="250">
                 <div class="sticky">
                     <p>Prima rată: 0€</p>
-                    <button>Comandă un apel</button>
-                    <form action="">
+                    <button title="Comanda un apel" type="button">Comandă un apel</button>
+                    <form action="auto_details" enctype="multipart/form-data" method="POST">
                         <h3>Contactați vânzătorul</h3>
-                        <input type="text" placeholder="Numele" required>
-                        <input type="tel" name="" id="" placeholder="Telefonul" required>
-                        <input type="email" name="" id="" placeholder="Email">
-                        <textarea name="mesaj" id="" cols="30" rows="6">Sunt interesat de o ofertă de preț pentru acest vehicul. Vă rog să mă contactați cât mai curând posibil cu cel mai bun preț pentru acest vehicul.</textarea>
+                        <input  type="text" name="text" placeholder="Numele" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Telefonul" required>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="mesaj" id="mesaj" cols="30" rows="6">Sunt interesat de o ofertă de preț pentru acest vehicul. Vă rog să mă contactați cât mai curând posibil cu cel mai bun preț pentru acest vehicul.</textarea>
                         <button type="submit">Expediază</button>
                     </form>
                 </div>
