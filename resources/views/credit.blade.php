@@ -11,42 +11,42 @@
             <div class="parallax-image"></div>
             <div class="container">
                 <div class="parallax-text">
-                    <h1>Suntem alături de tine cu oferte generoase pentru viitorul tău automobil</h1>
-                    <p>Descoperiți plăcerea de a vă achiziționa automobilul dorit cu cele mai atractive condiții de finanțare,
+                    <h1 data-aos="fade-in" data-aos-delay="0">Suntem alături de tine cu oferte generoase pentru viitorul tău automobil</h1>
+                    <p data-aos="fade-in" data-aos-delay="300">Descoperiți plăcerea de a vă achiziționa automobilul dorit cu cele mai atractive condiții de finanțare,
                         oferite de Parcul Auto NobilAuto</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="conditions-section container">
-        <p>CUM FUNCȚIONEAZĂ</p>
-        <h1>Achiziția - simplă și convenabilă!</h1>
-        <p>Procurați-vă mașina atunci când aveți nevoie de libertate de mișcare, economisind considerabil în proces.</p>
+        <p data-aos="fade-up" data-aos-delay="0">CUM FUNCȚIONEAZĂ</p>
+        <h1 data-aos="fade-up" data-aos-delay="150">Achiziția - simplă și convenabilă!</h1>
+        <p data-aos="fade-up" data-aos-delay="300">Procurați-vă mașina atunci când aveți nevoie de libertate de mișcare, economisind considerabil în proces.</p>
         <div class="conditions">
             <div class="column">
-                <div class="contidion">
+                <div class="contidion" data-aos="fade-up" data-aos-offset="50" data-aos-delay="0">
                     <i class="fa-solid fa-user"></i>
                     <p>Vârsta minimă 18 ani</p>
                 </div>
-                <div class="contidion">
+                <div class="contidion" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200">
                     <i class="fa-solid fa-id-card"></i>
                     <p>Doar cu Buletinul de Identitate</p>
                 </div>
-                <div class="contidion">
+                <div class="contidion" data-aos="fade-up" data-aos-offset="50" data-aos-delay="400">
                     <i class="fa-solid fa-users-slash"></i>
                     <p>Fără persoană garant</p>
                 </div>
             </div>
             <div class="column">
-                <div class="contidion">
+                <div class="contidion" data-aos="fade-up" data-aos-offset="50" data-aos-delay="600">
                     <i class="fa-brands fa-creative-commons-nc"></i>
                     <p>Posibil fără prima rată</p>
                 </div>
-                <div class="contidion">
+                <div class="contidion" data-aos="fade-up" data-aos-offset="50" data-aos-delay="800">
                     <i class="fa-solid fa-sack-xmark"></i>
                     <p>Fără declararea veniturilor</p>
                 </div>
-                <div class="contidion">
+                <div class="contidion" data-aos="fade-up" data-aos-offset="50" data-aos-delay="1000">
                     <i class="fa-solid fa-file-circle-check"></i>
                     <p>Aprobarea garantată a dosarului</p>
                 </div>

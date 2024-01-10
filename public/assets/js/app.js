@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
         options.forEach(option => {
         option.addEventListener('click', () => {
             selected.innerHTML = option.innerHTML;
-            menu.classList.remove('active');
+            // menu.classList.remove('active');
+            removeHiddenClass()
         })
         })
     })
@@ -124,6 +125,10 @@ $(document).ready(function () {
             },
         },
     });
+    $('.owl-prev, .owl-next').attr({
+        'data-aos': 'fade-up',
+        'data-aos-delay': '0300'
+      });
 });
 
 const counters = document.querySelectorAll(".achivement span");
@@ -160,4 +165,18 @@ function startCounterAnimation(counter) {
     };
 
     updateCount();
+}
+
+function followClickOut() {
+    const newDiv = document.createElement('div')
+    newDiv.classList.add('hidden')
+    newDiv.onclick = removeHiddenClass;
+    document.body.appendChild(newDiv)
+}
+
+function removeHiddenClass() {
+    const hiddenElement = document.querySelector('.hidden');
+    const activeElement = document.querySelector('.lang-dropdown.active');
+    hiddenElement.remove();
+  if (activeElement) activeElement.classList.remove('active');
 }

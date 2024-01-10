@@ -5,7 +5,7 @@
             <h2>Caută Mașina</h2>
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Acasă</a></li>
-                <li class="breadcrumb-item active">All banners</li>
+                <li class="breadcrumb-item active">Toate mașinele</li>
             </ul>
         </header>
         <div class="cars-content">
@@ -14,50 +14,28 @@
                     <h2>
                         Filtre
                     </h2>
-                    <div class="filters">
-                        <input class="dropdown" type="checkbox" id="producator" name="dropdown" />
-                        <label class="for-dropdown" for="producator">Producător<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                        </div>
-                    </div>
-                    <div class="filters">
-                        <input class="dropdown" type="checkbox" id="model" name="dropdown" />
-                        <label class="for-dropdown" for="model">Model<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                        </div>
-                    </div>
-                    <div class="filters">
-                        <input class="dropdown" type="checkbox" id="fuel" name="dropdown" />
-                        <label class="for-dropdown" for="fuel">Combustibil<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                        </div>
-                    </div>
-                    <div class="filters">
-                        <input class="dropdown" type="checkbox" id="gear" name="dropdown" />
-                        <label class="for-dropdown" for="gear">Cutia de viteză<i
-                                class="uil fa-solid fa-chevron-down"></i></i></label>
-                        <div class="section-dropdown">
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub</i></label>
-                        </div>
-                    </div>
+                    <select class="producator" multiple data-placeholder="Producător">
+                        <option>Audi</option>
+                        <option>BWM</option>
+                        <option>Mercedes</option>
+                        <option>Dacia</option>
+                    </select>
+
+                    <select class="model" multiple data-placeholder="Model">
+                        <option>111</option>
+                        <option>222</option>
+                        <option>333</option>
+                        <option>444</option>
+                    </select>
+
+                    <select class="gear" multiple data-placeholder="Cutia">
+                        <option>111</option>
+                        <option>222</option>
+                        <option>333</option>
+                        <option>444</option>
+                    </select>
+                   
+    
                 </div>
                 <div class="cars-filtre duo">
                     <h2>
@@ -75,15 +53,15 @@
                         Anul producerii
                     </h2>
                     <div class="rangeslider">
-                        <input class="min" name="range_1" type="range" min="1980" max="2035"
+                        <input class="min"  name="range_1" type="range" min="1980" max="2035"
                             value="2015" />
                         <input class="max" name="range_1" type="range" min="1980" max="2035"
                             value="2022" />
                     </div>
                     <div class="filters">
-                        <input class="range_min" type="text" id="range_min" name="range_min" value="2015"
+                        <input class="range_min" onchange="triggerRangeMin(event)" type="text" id="range_min" name="range_min" value="2015"
                             onkeyup="this.value = this.value.replace (/[^0-9+]/, '')" />
-                        <input class="range_max" type="text" id="range_max" name="range_max" value="2022"
+                        <input class="range_max" onchange="triggerRangeMax(event)" type="text" id="range_max" name="range_max" value="2022"
                             onkeyup="this.value = this.value.replace (/[^0-9+]/, '')" />
                     </div>
                 </div>
@@ -166,7 +144,7 @@
                             </div>
                         </div>
 
-                        <div class="filter-mobile">
+                        <div class="filter-mobile" onclick="toggleScroll()">
                             <div class="filter-line"></div>
                             <div class="filter-line"></div>
                             <div class="filter-line"></div>
@@ -174,7 +152,7 @@
                     </div>
                 </div>
                 <div class="cars-items">
-                    <a href="/" class="item">
+                    <a href="/" class="item" data-aos="fade-up" data-aos-offset="50">
                         <figure class="item-img">
                             <img src="/assets/images/auto/volvo.jpg" loading="lazy" alt="volvo x90">
                             <div class="item-img-detail">
@@ -202,7 +180,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/" class="item">
+                    <a href="/" class="item" data-aos="fade-up" data-aos-offset="50">
                         <figure class="item-img">
                             <img src="/assets/images/auto/volvo.jpg" loading="lazy" alt="volvo x90">
                             <div class="item-img-detail">
@@ -230,7 +208,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/" class="item">
+                    <a href="/" class="item" data-aos="fade-up" data-aos-offset="50">
                         <figure class="item-img">
                             <img src="/assets/images/auto/volvo.jpg" loading="lazy" alt="volvo x90">
                             <div class="item-img-detail">
@@ -258,7 +236,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/" class="item">
+                    <a href="/" class="item" data-aos="fade-up" data-aos-offset="50">
                         <figure class="item-img">
                             <img src="/assets/images/auto/volvo.jpg" loading="lazy" alt="volvo x90">
                             <div class="item-img-detail">
@@ -286,7 +264,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/" class="item">
+                    <a href="/" class="item" data-aos="fade-up" data-aos-offset="50">
                         <figure class="item-img">
                             <img src="/assets/images/auto/volvo.jpg" loading="lazy" alt="volvo x90">
                             <div class="item-img-detail">

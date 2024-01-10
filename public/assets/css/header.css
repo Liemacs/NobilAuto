@@ -234,6 +234,7 @@
 
 .nav-actions .nav-icons .menu.active {
     width: 100%;
+    /* backdrop-filter: blur(100px); */
 }
 
 .nav-actions .nav-icons .menu .nav-intro {
