@@ -166,16 +166,16 @@ function startCounterAnimation(counter) {
     updateCount();
 }
 
-function followClickOut() {
-    const newDiv = document.createElement('div')
-    newDiv.classList.add('hidden')
-    newDiv.onclick = removeHiddenClass;
-    document.body.appendChild(newDiv)
-}
+// function followClickOut() {
+//     const newDiv = document.createElement('div')
+//     newDiv.classList.add('hidden')
+//     newDiv.onclick = removeHiddenClass;
+//     document.body.appendChild(newDiv)
+// }
 
-function removeHiddenClass() {
-    const hiddenElement = document.querySelector('.hidden');
-    const activeElement = document.querySelector('.lang-dropdown.active');
-    hiddenElement.remove();
-  if (activeElement) activeElement.classList.remove('active');
-}
+// function removeHiddenClass() {
+//     const hiddenElement = document.querySelector('.hidden');
+//     const activeElement = document.querySelector('.lang-dropdown.active');
+//     hiddenElement.remove();
+//   if (activeElement) activeElement.classList.remove('active');
+// }
